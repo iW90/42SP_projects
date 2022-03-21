@@ -13,3 +13,6 @@
 [submodule "HumanCoder/libft"]
 	path = HumanCoder/libft
 	url = git@github.com:iW90/42SP-libft.git
+[submodule "HumanCoder/minitalk"]
+	path = HumanCoder/minitalk
+	url = git@github.com:iW90/minitalk.git
