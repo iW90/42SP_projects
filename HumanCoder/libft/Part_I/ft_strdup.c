@@ -1,30 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: inwagner <inwagner@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/07 17:42:12 by inwagner          #+#    #+#             */
-/*   Updated: 2022/09/07 17:42:12 by inwagner         ###   ########.fr       */
+/*   Created: 2022/09/09 20:47:37 by inwagner          #+#    #+#             */
+/*   Updated: 2022/09/09 20:47:37 by inwagner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+char	*ft_strdup(char *src)
 {
-	size_t	i;
-	char	*str;
+	char	*dup;
+	size_t	len;
 
-	i = 0;
-	str = (char*)s;
-	if (n != 0)
-	{
-		while (i != n)
-		{
-			str[i] = '\0';
-			i++;
-		}
-	}
+	len = ft_strlen(src) + 1;
+	dup = malloc(sizeof(char) * len);
+	if (!dup)
+		return (0);
+	return (ft_strlcpy(dup, src, len));
 }
