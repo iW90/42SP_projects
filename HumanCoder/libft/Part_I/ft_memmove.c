@@ -6,7 +6,7 @@
 /*   By: inwagner <inwagner@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/07 17:42:41 by inwagner          #+#    #+#             */
-/*   Updated: 2022/09/07 17:42:41 by inwagner         ###   ########.fr       */
+/*   Updated: 2022/09/10 15:36:05 by inwagner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,20 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t n)
 {
+	size_t		i;
+	char	*csrc;
+	char	*cdst;
+	char	*temp;
 
+	csrc = (char *)src;
+	cdst = (char *)dest;
+	i = 0;
+	while (i != n)
+	{
+		temp[i] = csrc[i];
+		cdest[i] = temp[i];
+		i++;
+	}
 }
 
 /*

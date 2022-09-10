@@ -6,7 +6,7 @@
 /*   By: inwagner <inwagner@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/07 17:42:29 by inwagner          #+#    #+#             */
-/*   Updated: 2022/09/10 13:28:05 by inwagner         ###   ########.fr       */
+/*   Updated: 2022/09/10 15:34:53 by inwagner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memchr(const void *src, int c, size_t n)
 {
-	int		i;
+	size_t		i;
 	char	*str;
 
 	i = 0;
