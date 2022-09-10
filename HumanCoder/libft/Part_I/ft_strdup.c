@@ -6,7 +6,7 @@
 /*   By: inwagner <inwagner@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 20:47:37 by inwagner          #+#    #+#             */
-/*   Updated: 2022/09/09 20:47:37 by inwagner         ###   ########.fr       */
+/*   Updated: 2022/09/10 15:02:45 by inwagner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,6 @@ char	*ft_strdup(char *src)
 	dup = malloc(sizeof(char) * len);
 	if (!dup)
 		return (0);
-	return (ft_strlcpy(dup, src, len));
+	ft_strlcpy(dup, src, len);
+	return (src);
 }

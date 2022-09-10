@@ -6,7 +6,7 @@
 /*   By: inwagner <inwagner@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/07 17:18:26 by inwagner          #+#    #+#             */
-/*   Updated: 2022/09/07 17:18:26 by inwagner         ###   ########.fr       */
+/*   Updated: 2022/09/10 14:46:57 by inwagner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,21 +14,20 @@
 
 void	*ft_memset(const void *src, int c, size_t n)
 {
-	size_t i;
+	size_t	i;
+	char	*str;
 
+	str = (char *)src;
 	i = 0;
-	while (i != n)
+	if (n != 0)
 	{
-		write (1, &c, 1);
-		i++;
-	}
-	while (&src[i])
-	{
-		write (1, &src[i], 1);
-		i++;
+		while (i != n)
+		{
+			str[i] = c;
+			i++;
+		}
 	}
 }
-
 
 /*
 RETORNA: Substitui os ‘n’ primeiros bytes do bloco de memória ‘src’ pelo ‘c’. Por ser uma substituição direta do bloco de byte, é possível sobrescrever o caractere terminal.

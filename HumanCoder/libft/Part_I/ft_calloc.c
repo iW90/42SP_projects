@@ -6,20 +6,19 @@
 /*   By: inwagner <inwagner@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 20:47:34 by inwagner          #+#    #+#             */
-/*   Updated: 2022/09/09 20:47:34 by inwagner         ###   ########.fr       */
+/*   Updated: 2022/09/10 15:07:10 by inwagner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *calloc(size_t nitems, size_t size)
+void	*calloc(size_t nitems, size_t size)
 {
-	void	*ting;
+	void	*slot;
 
-	ting = malloc(nitems * size);
-
-	ft_bzero(ting, nitems * size);
-
+	slot = malloc(nitems * size);
+	if (slot != 0)
+		ft_bzero(slot, nitems * size);
 }
 
 //nitems - This is the number of elements to be allocated.
