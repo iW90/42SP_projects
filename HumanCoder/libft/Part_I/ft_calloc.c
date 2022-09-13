@@ -19,6 +19,7 @@ void	*calloc(size_t nitems, size_t size)
 	slot = malloc(nitems * size);
 	if (nitems * size != 0)
 		ft_bzero(slot, nitems * size);
+	return (slot);
 }
 
 //nitems - This is the number of elements to be allocated.

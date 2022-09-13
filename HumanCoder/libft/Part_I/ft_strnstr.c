@@ -14,12 +14,12 @@
 
 char	*ft_strnstr(const char *big, const char *little, size_t n)
 {
-	int	i;
-	int	j;
-	int	validator;
+	size_t	i;
+	size_t	j;
+	size_t	validator;
 
-	if (*little == '\0')
-		return (big);
+	if (!*little)
+		return ((char *)big);
 	i = 0;
 	while (big[i++] && i != n)
 	{
@@ -34,7 +34,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t n)
 				j++;
 			}
 			if (validator == 0)
-				return (&big[i]);
+				return ((char *)&big[i]);
 			j++;
 		}
 	}

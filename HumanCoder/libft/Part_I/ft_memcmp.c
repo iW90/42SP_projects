@@ -15,14 +15,18 @@
 int	ft_memcmp(const void *strA, const void *strB, size_t n)
 {
 	size_t	i;
+	char 	*strAA;
+	char	*strBB;
 
+	strAA = (char *)strA;
+	strBB = (char *)strB;
 	i = 0;
 	if (n != 0)
 	{
 		while (i != n)
 		{
-			if (strA[i] != strB[i])
-				return ((int)(strA[i] - strB[i]));
+			if (strAA[i] != strBB[i])
+				return ((int)(strAA[i] - strBB[i]));
 			i++;
 		}
 		return (0);
