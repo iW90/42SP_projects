@@ -17,8 +17,11 @@ void	*calloc(size_t nitems, size_t size)
 	void	*slot;
 
 	slot = malloc(nitems * size);
-	if (nitems * size != 0)
+	if (nitems * size)
+	{
 		ft_bzero(slot, nitems * size);
+		return ((void *)slot);
+	}
 	return (slot);
 }
 
