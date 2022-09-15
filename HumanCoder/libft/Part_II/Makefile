@@ -16,7 +16,7 @@ HDR		= -I ./includes/
 PRE		= ./srcs/
 SRCS	= $(addprefix ${PRE}, ${FTS})
 OBJS	= $(FTS:.c=.o)
-FTS		= ft_itoa.c ft_memalloc.c ft_memdel.c ft_putchar_fd.c ft_putchar.c ft_putendl_fd.c ft_putendl.c ft_putnbr.c ft_putstr.c ft_strclr.c ft_strdel.c ft_strequ.c ft_striter.c ft_iteri.c ft_strjoin.c ft_strmap.c ft_strmapi.c ft_strnequ.c ft_strnew.c ft_strsplit.c ft_strsub.c ft_strtrim.c
+FTS		= ft_itoa.c ft_putchar_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_putstr_fd.c ft_striteri.c ft_strjoin.c ft_strmapi.c ft_split.c ft_substr.c ft_strtrim.c
 
 all: $(NAME)
 
