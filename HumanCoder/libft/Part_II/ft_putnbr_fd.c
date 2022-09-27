@@ -14,5 +14,22 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
+	char	*str;
 
+	*str = ft_itoa(n);
+	while (str++)
+		ft_putnbr_fd(str, fd);
 }
+/*
+void	ft_putnbr_fd(int n, int fd)
+{
+	if (n < 0)
+	{
+		write(fd, "-", 1);
+		n *= -1;
+	}
+	if (n > 9)
+		ft_putnbr_fd(n / 10, fd);
+	ft_putchar((n % 10) + 48, fd);
+}
+*/
