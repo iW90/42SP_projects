@@ -16,6 +16,8 @@ char	*ft_strchr(const char *src, int c)
 {
 	int	i;
 
+	if (!c)
+		return ((char *)&src[ft_strlen(src)]);
 	i = 0;
 	while (src[i])
 	{

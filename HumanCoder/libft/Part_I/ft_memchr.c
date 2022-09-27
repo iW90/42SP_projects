@@ -29,6 +29,6 @@ void	*ft_memchr(const void *src, int c, size_t n)
 }
 
 /*
-RETORNA: Retorna um ponteiro do tipo ‘void’ para primeira ocorrência do ‘c’ nos ‘n’-primeiros bytes do bloco de memória ‘src’. Caso não encontre, será retornado um ponteiro NULL, definido pela Macro da biblioteca <string.h>. Toda conversão entre char e int é feita de forma automática.
+RETORNA: Retorna um ponteiro do tipo ‘void’ para primeira ocorrência do ‘c’ nos ‘n’ primeiros bytes do bloco de memória ‘src’. Caso não encontre, será retornado um ponteiro NULL, definido pela Macro da biblioteca <string.h>. Toda conversão entre char e int é feita de forma automática.
 RECEBE: Uma bloco de memória fonte, um caractere que será convertido para int, um valor size_t (longo inteiro sem sinal) representando o número de bytes a serem lidos do bloco.
 */
