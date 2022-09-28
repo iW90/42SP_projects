@@ -21,15 +21,15 @@ FTS	= ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	ar -rc $(NAME) $(OBJS)
+	@ar -rc $(NAME) $(OBJS)
 
 $(OBJS):
-	gcc $(FLAG) $(HDR) -c $(SRCS)
+	@gcc $(FLAG) $(HDR) -c $(SRCS)
 
 clean:
-	rm -rf $(OBJS)
+	@rm -rf $(OBJS)
 
 fclean:	clean
-	rm -rf $(NAME)
+	@rm -rf $(NAME)
 
 re: fclean all
