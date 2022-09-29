@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: inwagner <inwagner@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: iw90 <iw90@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/07 17:43:05 by inwagner          #+#    #+#             */
-/*   Updated: 2022/09/10 13:05:22 by inwagner         ###   ########.fr       */
+/*   Updated: 2022/09/29 16:52:31 by iw90             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,13 @@ char	*ft_strnstr(const char *big, const char *little, size_t n)
 {
 	size_t	littlen;
 
+	if ((!*big && !*little) || !*little)
+		return ((char *)big);
+
 	littlen = ft_strlen(little);
-	while (*big && n)
+	while (*big && littlen <= n)
 	{
-		if (!ft_memcmp(big, little, littlen))
+		if (!ft_strncmp(big, little, littlen))
 			return ((char *)big);
 		big++;
 		n--;

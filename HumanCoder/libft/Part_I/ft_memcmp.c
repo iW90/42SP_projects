@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: inwagner <inwagner@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: iw90 <iw90@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/07 17:42:33 by inwagner          #+#    #+#             */
-/*   Updated: 2022/09/10 14:53:20 by inwagner         ###   ########.fr       */
+/*   Updated: 2022/09/29 17:11:18 by iw90             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,19 @@
 
 int	ft_memcmp(const void *strA, const void *strB, size_t n)
 {
-	return (ft_strncmp(strA, strB, n));
-}
+	size_t	i;
+	unsigned char 	*cstrA;
+	unsigned char	*cstrB;
 
-/*
-RETORNA: Retorna um valor após a comparação byte-a-byte dos dois blocos de memória. De forma detalhada, a função compara o primeiro byte da fonteA com o primeiro byte da fonteB. Caso sejam iguais, ele parte para o segundo caractere. Isso se repete até que ocorra uma divergência, ou quando a quantidade ‘n’ de bytes são lidos. Diferente da função strcmp(), a leitura não é interrompida caso encontre um caractere nulo.
-*/
+	cstrA = (unsigned char *)strA;
+	cstrB = (unsigned char *)strB;
+	i = 0;
+	while (i != n)
+	{
+		if (cstrA[i] != cstrB[i])
+			return ((int)(cstrA[i] - cstrB[i]));
+		i++;
+	}
+	return (0);
+	//return (ft_strncmp(strA, strB, n));
+}

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: inwagner <inwagner@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: iw90 <iw90@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/07 17:41:54 by inwagner          #+#    #+#             */
-/*   Updated: 2022/09/10 15:00:26 by inwagner         ###   ########.fr       */
+/*   Updated: 2022/09/29 14:46:16 by iw90             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,13 +25,12 @@ int	ft_atoi(const char *strNum)
 	i = 0;
 	while (ft_isspace(strNum[i]))
 		i++;
-	if (strNum[i] == '-')
+	if (strNum[i] == '-' || strNum[i] == '+')
 	{
-		signal *= -1;
+		if (strNum[i] == '-')
+			signal = -signal;
 		i++;
 	}
-	if (strNum[i] == '+')
-		i++;
 	while (ft_isdigit(strNum[i]))
 	{
 		number = (number * 10) + (strNum[i] - '0');

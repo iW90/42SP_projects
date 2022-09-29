@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: inwagner <inwagner@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: iw90 <iw90@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 20:47:37 by inwagner          #+#    #+#             */
-/*   Updated: 2022/09/10 15:02:45 by inwagner         ###   ########.fr       */
+/*   Updated: 2022/09/29 15:23:01 by iw90             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,5 @@ char	*ft_strdup(char *src)
 	if (!dup)
 		return (0);
 	ft_strlcpy(dup, src, len);
-	return (src);
+	return (dup);
 }

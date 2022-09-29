@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: inwagner <inwagner@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: iw90 <iw90@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/07 17:42:29 by inwagner          #+#    #+#             */
-/*   Updated: 2022/09/10 15:34:53 by inwagner         ###   ########.fr       */
+/*   Updated: 2022/09/29 17:11:13 by iw90             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,3 @@ void	*ft_memchr(const void *src, int c, size_t n)
 	}
 	return (0);
 }
-
-/*
-RETORNA: Retorna um ponteiro do tipo ‘void’ para primeira ocorrência do ‘c’ nos ‘n’ primeiros bytes do bloco de memória ‘src’. Caso não encontre, será retornado um ponteiro NULL, definido pela Macro da biblioteca <string.h>. Toda conversão entre char e int é feita de forma automática.
-RECEBE: Uma bloco de memória fonte, um caractere que será convertido para int, um valor size_t (longo inteiro sem sinal) representando o número de bytes a serem lidos do bloco.
-*/
