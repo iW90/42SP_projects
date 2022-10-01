@@ -6,7 +6,7 @@
 /*   By: iw90 <iw90@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/15 15:11:01 by inwagner          #+#    #+#             */
-/*   Updated: 2022/09/30 21:05:54 by iw90             ###   ########.fr       */
+/*   Updated: 2022/10/01 18:08:47 by iw90             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		return (0);
 	ls1 = ft_strlen(s1);
 	ls2 = ft_strlen(s2);
-	str = calloc(ls1 + ls2 + 1, sizeof(char));
+	str = (char *)ft_calloc(ls1 + ls2 + 1, sizeof(char));
 	ft_memmove(str, s1, ls1);
 	ft_strlcat(str, s2, ls1 + ls2 + 1);
 	return (str);

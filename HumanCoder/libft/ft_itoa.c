@@ -6,14 +6,11 @@
 /*   By: iw90 <iw90@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/15 15:05:59 by inwagner          #+#    #+#             */
-/*   Updated: 2022/09/30 20:21:31 by iw90             ###   ########.fr       */
+/*   Updated: 2022/10/01 17:58:38 by iw90             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//-2147483648 to 2147483647
-
-//#include "libft.h"
-#include <stdlib.h>
+#include "libft.h"
 
 static int	ft_isnegative(int n);
 static int	ft_intlen(int n);
@@ -30,7 +27,7 @@ char	*ft_itoa(int n)
 	len = ft_intlen(num);
 	if (signal == -1)
 		len++;
-	str = (char *)calloc(len + 1, sizeof(char));
+	str = (char *)ft_calloc(len + 1, sizeof(char));
 	if (!str)
 		return (0);
 	len--;
