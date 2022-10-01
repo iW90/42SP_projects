@@ -6,7 +6,7 @@
 /*   By: iw90 <iw90@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/15 15:11:09 by inwagner          #+#    #+#             */
-/*   Updated: 2022/10/01 18:06:52 by iw90             ###   ########.fr       */
+/*   Updated: 2022/10/01 18:33:24 by iw90             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	unsigned int	i;
+	size_t	i;
 	size_t	len;
 	char	*str;
 	

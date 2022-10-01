@@ -6,7 +6,7 @@
 /*   By: iw90 <iw90@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/07 17:43:09 by inwagner          #+#    #+#             */
-/*   Updated: 2022/10/01 18:01:49 by iw90             ###   ########.fr       */
+/*   Updated: 2022/10/01 18:48:14 by iw90             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 char	*ft_strrchr(const char *src, int c)
 {
-	int	i;
+	long int	i;
 
 	if (!c)
-		return ((char *)&src[ft_strlen(src)]);
+		return ((char *)&src[(long int)ft_strlen(src)]);
 	i = ft_strlen(src);
 	while (i >= 0)
 	{

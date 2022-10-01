@@ -6,7 +6,7 @@
 /*   By: iw90 <iw90@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/15 15:11:21 by inwagner          #+#    #+#             */
-/*   Updated: 2022/10/01 18:09:02 by iw90             ###   ########.fr       */
+/*   Updated: 2022/10/01 18:43:39 by iw90             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	sub = (char *)ft_calloc(len + 1, sizeof(char));
 	if (!sub)
 		return (0);
-	ft_strlcpy(sub, &s[start], len + 1);
+	ft_memcpy(sub, &s[start], len);
 	return (sub);
 }

@@ -6,7 +6,7 @@
 /*   By: iw90 <iw90@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/07 17:42:49 by inwagner          #+#    #+#             */
-/*   Updated: 2022/10/01 18:01:32 by iw90             ###   ########.fr       */
+/*   Updated: 2022/10/01 18:31:10 by iw90             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strchr(const char *src, int c)
 {
-	int	i;
+	size_t	i;
 
 	if (!c)
 		return ((char *)&src[ft_strlen(src)]);
