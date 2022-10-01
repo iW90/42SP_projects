@@ -1,31 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: iw90 <iw90@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/07 17:18:26 by inwagner          #+#    #+#             */
-/*   Updated: 2022/09/29 17:11:32 by iw90             ###   ########.fr       */
+/*   Created: 2022/09/09 20:47:37 by inwagner          #+#    #+#             */
+/*   Updated: 2022/09/30 20:17:41 by iw90             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *src, int c, size_t n)
+char	*ft_strdup(char *src)
 {
-	size_t	i;
-	char	*str;
+	char	*dup;
+	size_t	len;
 
-	str = (char *)src;
-	i = 0;
-	if (n != 0)
-	{
-		while (i != n)
-		{
-			str[i] = (char)c;
-			i++;
-		}
-	}
-	return (src);
+	len = ft_strlen(src) + 1;
+	dup = calloc(len, sizeof(char));
+	if (!dup)
+		return (0);
+	ft_strlcpy(dup, src, len);
+	return (dup);
 }

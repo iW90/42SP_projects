@@ -1,18 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: inwagner <inwagner@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: iw90 <iw90@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/15 15:11:25 by inwagner          #+#    #+#             */
-/*   Updated: 2022/09/15 15:11:25 by inwagner         ###   ########.fr       */
+/*   Created: 2022/09/07 17:18:26 by inwagner          #+#    #+#             */
+/*   Updated: 2022/09/30 20:16:03 by iw90             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strtrim(char const *s1, char const *set)
+void	*ft_memset(void *src, int c, size_t n)
 {
+	size_t	i;
+	char	*str;
 
+	str = (char *)src;
+	i = 0;
+	if (n)
+	{
+		while (i != n)
+		{
+			str[i] = (char)c;
+			i++;
+		}
+	}
+	return (src);
 }

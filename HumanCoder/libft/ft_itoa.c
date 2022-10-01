@@ -3,59 +3,59 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: inwagner <inwagner@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: iw90 <iw90@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/15 15:05:59 by inwagner          #+#    #+#             */
-/*   Updated: 2022/09/15 15:05:59 by inwagner         ###   ########.fr       */
+/*   Updated: 2022/09/30 20:21:31 by iw90             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+//-2147483648 to 2147483647
 
-int	ft_isnegative(int n);
-int	ft_intlen(int n);
+//#include "libft.h"
+#include <stdlib.h>
+
+static int	ft_isnegative(int n);
+static int	ft_intlen(int n);
 
 char	*ft_itoa(int n)
 {
-	char	*a;
+	unsigned int	num;
 	int		signal;
 	int		len;
+	char	*str;
 
 	signal = ft_isnegative(n);
-	len = ft_intlen(n);
-	if (signal)
+	num = n * signal;
+	len = ft_intlen(num);
+	if (signal == -1)
 		len++;
-	a = (char *)malloc(sizeof(char) * len + 1);
-	a[len--] = "\0";
-	if (!n)
+	str = (char *)calloc(len + 1, sizeof(char));
+	if (!str)
+		return (0);
+	len--;
+	if (!num)
+		str[0] = '0';
+	if (signal == -1)
+		str[0] = '-';
+	while (num)
 	{
-		a[0] = 0;
-		return (a);
+		str[len--] = (num % 10) + '0';
+		num /= 10;
 	}
-	if (signal)
-		a[0] = '-';
-	while (n)
-	{
-		a[len] = (n % 10) + 48;
-		n /= 10;
-		len--;
-	}
-	return (a);
+	return (str);
 }
 
-int	ft_isnegative(int n)
+static int	ft_isnegative(int n)
 {
 	if (n < 0)
 		return (-1);
-	return (0);
+	return (1);
 }
 
-int	ft_intlen(int n)
+static int	ft_intlen(int n)
 {
-	if (n)
-	{
-		n /= 10;
-		return (1 + ft_intlen(n));
-	}
-	return (1);
+	if (!(n/10))
+		return (1);
+	return (1 + ft_intlen(n/10));
 }

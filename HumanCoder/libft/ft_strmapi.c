@@ -1,35 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: inwagner <inwagner@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: iw90 <iw90@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/15 15:10:20 by inwagner          #+#    #+#             */
-/*   Updated: 2022/09/15 15:10:20 by inwagner         ###   ########.fr       */
+/*   Created: 2022/09/15 15:11:09 by inwagner          #+#    #+#             */
+/*   Updated: 2022/09/30 20:19:21 by iw90             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr_fd(int n, int fd)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
+	unsigned int	i;
+	size_t	len;
 	char	*str;
-
-	*str = ft_itoa(n);
-	while (str++)
-		ft_putnbr_fd(str, fd);
-}
-/*
-void	ft_putnbr_fd(int n, int fd)
-{
-	if (n < 0)
+	
+	len = ft_strlen(s);
+	str = (char *)calloc(len + 1, sizeof(char));
+	if (!str)
+		return (0);
+	i = 0;
+	while (s[i])
 	{
-		write(fd, "-", 1);
-		n *= -1;
+		str[i] = (*f)(i, s[i]);
+		i++;
 	}
-	if (n > 9)
-		ft_putnbr_fd(n / 10, fd);
-	ft_putchar((n % 10) + 48, fd);
+	return (str);
 }
-*/

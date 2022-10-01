@@ -1,19 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: inwagner <inwagner@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: iw90 <iw90@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/15 15:10:32 by inwagner          #+#    #+#             */
-/*   Updated: 2022/09/15 15:10:32 by inwagner         ###   ########.fr       */
+/*   Created: 2022/09/07 17:42:12 by inwagner          #+#    #+#             */
+/*   Updated: 2022/09/30 20:06:09 by iw90             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr_fd(char *s, int fd)
+void	ft_bzero(void *s, size_t n)
 {
-	while (s++)
-		ft_putnbr_fd(s, fd);
+	ft_memset(s, '\0', n);
 }

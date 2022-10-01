@@ -1,32 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: iw90 <iw90@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/07 17:42:33 by inwagner          #+#    #+#             */
-/*   Updated: 2022/09/29 17:11:18 by iw90             ###   ########.fr       */
+/*   Created: 2022/09/07 17:42:29 by inwagner          #+#    #+#             */
+/*   Updated: 2022/09/30 20:10:04 by iw90             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_memcmp(const void *strA, const void *strB, size_t n)
+void	*ft_memchr(const void *src, int c, size_t n)
 {
 	size_t	i;
-	unsigned char 	*cstrA;
-	unsigned char	*cstrB;
+	unsigned char	*str;
+	unsigned char	chr;
 
-	cstrA = (unsigned char *)strA;
-	cstrB = (unsigned char *)strB;
 	i = 0;
+	str = (unsigned char *)src;
+	chr = (unsigned char )c;
 	while (i != n)
 	{
-		if (cstrA[i] != cstrB[i])
-			return ((int)(cstrA[i] - cstrB[i]));
+		if (str[i] == chr)
+			return ((void *)&str[i]);
 		i++;
 	}
 	return (0);
-	//return (ft_strncmp(strA, strB, n));
 }
