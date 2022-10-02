@@ -6,7 +6,7 @@
 /*   By: iw90 <iw90@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/15 15:05:59 by inwagner          #+#    #+#             */
-/*   Updated: 2022/10/01 17:58:38 by iw90             ###   ########.fr       */
+/*   Updated: 2022/10/01 21:30:47 by iw90             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,9 @@ static int	ft_intlen(int n);
 char	*ft_itoa(int n)
 {
 	unsigned int	num;
-	int		signal;
-	int		len;
-	char	*str;
+	int				signal;
+	int				len;
+	char			*str;
 
 	signal = ft_isnegative(n);
 	num = n * signal;
@@ -52,7 +52,7 @@ static int	ft_isnegative(int n)
 
 static int	ft_intlen(int n)
 {
-	if (!(n/10))
+	if (!(n / 10))
 		return (1);
-	return (1 + ft_intlen(n/10));
+	return (1 + ft_intlen(n / 10));
 }

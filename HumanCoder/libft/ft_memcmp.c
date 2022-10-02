@@ -6,25 +6,25 @@
 /*   By: iw90 <iw90@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/07 17:42:33 by inwagner          #+#    #+#             */
-/*   Updated: 2022/09/30 20:13:36 by iw90             ###   ########.fr       */
+/*   Updated: 2022/10/01 21:34:01 by iw90             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_memcmp(const void *strA, const void *strB, size_t n)
+int	ft_memcmp(const void *stra, const void *strb, size_t n)
 {
-	size_t	i;
-	unsigned char 	*cstrA;
-	unsigned char	*cstrB;
+	size_t			i;
+	unsigned char	*cstra;
+	unsigned char	*cstrb;
 
-	cstrA = (unsigned char *)strA;
-	cstrB = (unsigned char *)strB;
+	cstra = (unsigned char *)stra;
+	cstrb = (unsigned char *)strb;
 	i = 0;
 	while (i != n)
 	{
-		if (cstrA[i] != cstrB[i])
-			return ((int)(cstrA[i] - cstrB[i]));
+		if (cstra[i] != cstrb[i])
+			return ((int)(cstra[i] - cstrb[i]));
 		i++;
 	}
 	return (0);

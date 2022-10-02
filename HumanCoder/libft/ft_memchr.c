@@ -6,7 +6,7 @@
 /*   By: iw90 <iw90@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/07 17:42:29 by inwagner          #+#    #+#             */
-/*   Updated: 2022/09/30 20:10:04 by iw90             ###   ########.fr       */
+/*   Updated: 2022/10/01 21:31:15 by iw90             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memchr(const void *src, int c, size_t n)
 {
-	size_t	i;
+	size_t			i;
 	unsigned char	*str;
 	unsigned char	chr;
 

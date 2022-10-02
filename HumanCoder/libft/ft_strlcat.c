@@ -6,7 +6,7 @@
 /*   By: iw90 <iw90@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/07 17:42:53 by inwagner          #+#    #+#             */
-/*   Updated: 2022/09/29 18:56:04 by iw90             ###   ########.fr       */
+/*   Updated: 2022/10/01 21:38:14 by iw90             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t len)
 	size_t	i;
 	size_t	ldst;
 	size_t	lsrc;
-	
+
 	ldst = ft_strlen(dst);
 	lsrc = ft_strlen(src);
 	if (len <= ldst)

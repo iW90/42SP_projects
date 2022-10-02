@@ -6,7 +6,7 @@
 /*   By: iw90 <iw90@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/15 15:11:18 by inwagner          #+#    #+#             */
-/*   Updated: 2022/10/01 19:52:40 by iw90             ###   ########.fr       */
+/*   Updated: 2022/10/01 21:36:50 by iw90             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ char	**ft_split(char const *str, char c)
 	if (!str)
 		return (0);
 	nsubs = ft_substrcounter(str, c);
-	pbox = (char **)ft_calloc((nsubs + 1), sizeof(char*));
+	pbox = (char **)ft_calloc((nsubs + 1), sizeof(char *));
 	start = 0;
 	i = 0;
 	while (i < nsubs)
@@ -43,8 +43,8 @@ char	**ft_split(char const *str, char c)
 
 static int	ft_substrcounter(char const *str, char c)
 {
-	int i;
-	int count;
+	int	i;
+	int	count;
 
 	count = 0;
 	i = 0;

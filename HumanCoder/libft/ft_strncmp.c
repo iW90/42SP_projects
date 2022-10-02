@@ -6,25 +6,25 @@
 /*   By: iw90 <iw90@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/07 17:43:02 by inwagner          #+#    #+#             */
-/*   Updated: 2022/09/29 15:48:34 by iw90             ###   ########.fr       */
+/*   Updated: 2022/10/01 21:39:49 by iw90             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strncmp(const char *strA, const char *strB, size_t n)
+int	ft_strncmp(const char *stra, const char *strb, size_t n)
 {
-	size_t	i;
-	unsigned char 	*cstrA;
-	unsigned char	*cstrB;
+	size_t			i;
+	unsigned char	*cstra;
+	unsigned char	*cstrb;
 
-	cstrA = (unsigned char *)strA;
-	cstrB = (unsigned char *)strB;
+	cstra = (unsigned char *)stra;
+	cstrb = (unsigned char *)strb;
 	i = 0;
 	while (i != n)
 	{
-		if (cstrA[i] != cstrB[i])
-			return ((int)(cstrA[i] - cstrB[i]));
+		if (cstra[i] != cstrb[i])
+			return ((int)(cstra[i] - cstrb[i]));
 		i++;
 	}
 	return (0);

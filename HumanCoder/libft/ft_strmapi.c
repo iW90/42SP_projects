@@ -6,7 +6,7 @@
 /*   By: iw90 <iw90@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/15 15:11:09 by inwagner          #+#    #+#             */
-/*   Updated: 2022/10/01 18:33:24 by iw90             ###   ########.fr       */
+/*   Updated: 2022/10/01 21:38:43 by iw90             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	size_t	i;
 	size_t	len;
 	char	*str;
-	
+
 	len = ft_strlen(s);
 	str = (char *)ft_calloc(len + 1, sizeof(char));
 	if (!str)
