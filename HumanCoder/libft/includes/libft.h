@@ -6,7 +6,7 @@
 /*   By: iw90 <iw90@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/01 21:57:02 by iw90              #+#    #+#             */
-/*   Updated: 2022/10/01 22:03:26 by iw90             ###   ########.fr       */
+/*   Updated: 2022/10/02 12:23:46 by iw90             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,6 +67,6 @@ void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstlast(t_list *lst);
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 t_list	*ft_lstnew(void *content);
-int	ft_lstsize(t_list *lst);
+int		ft_lstsize(t_list *lst);
 
 #endif
