@@ -6,7 +6,7 @@
 /*   By: iw90 <iw90@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/01 21:57:02 by iw90              #+#    #+#             */
-/*   Updated: 2022/10/02 12:23:46 by iw90             ###   ########.fr       */
+/*   Updated: 2022/10/05 12:33:49 by iw90             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t n);
 void	*ft_memset(void *src, int c, size_t n);
 char	*ft_strchr(const char *src, int c);
-char	*ft_strdup(char *src);
+char	*ft_strdup(const char *s1);
 size_t	ft_strlcat(char *dst, const char *src, size_t len);
 size_t	ft_strlcpy(char *dst, const char *src, size_t len);
 size_t	ft_strlen(const char *src);
