@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iw90 <iw90@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: inwagner <inwagner@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/15 15:11:18 by inwagner          #+#    #+#             */
-/*   Updated: 2022/10/01 21:36:50 by iw90             ###   ########.fr       */
+/*   Created: 2022/10/03 18:25:16 by inwagner          #+#    #+#             */
+/*   Updated: 2022/10/15 18:08:00 by inwagner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,8 @@ char	**ft_split(char const *str, char c)
 		return (0);
 	nsubs = ft_substrcounter(str, c);
 	pbox = (char **)ft_calloc((nsubs + 1), sizeof(char *));
+	if (!pbox)
+		return (0);
 	start = 0;
 	i = 0;
 	while (i < nsubs)

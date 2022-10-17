@@ -25,16 +25,16 @@ FTS		= ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c ft_isascii.c f
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	@ar -rc $(NAME) $(OBJS)
+	@ar -rcs $(NAME) $(OBJS)
 
 $(OBJS):
-	@gcc $(FLAG) $(HDR) -c $(SRCS)
+	@cc $(FLAG) $(HDR) -c $(addprefix ${PRE}, ${@:.o=.c})
 
 bonus: $(NAME) $(OBJSB)
 
-$(OBJSB): $(SRCSB)
-	@gcc $(FLAG) $(HDR) -c $(SRCSB)
-	@ar -rc $(NAME) $(OBJSB)
+$(OBJSB):
+	@cc $(FLAG) $(HDR) -c -c $(addprefix ${PREB}, ${@:.o=.c})
+	@ar -rcs $(NAME) $@
 
 clean:
 	@rm -rf $(OBJS) $(OBJSB)
@@ -43,3 +43,5 @@ fclean:	clean
 	@rm -rf $(NAME)
 
 re: fclean all
+
+.PHONY: all bonus clean fclean re

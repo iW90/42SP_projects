@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iw90 <iw90@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: inwagner <inwagner@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/09 20:47:37 by inwagner          #+#    #+#             */
-/*   Updated: 2022/10/05 12:30:54 by iw90             ###   ########.fr       */
+/*   Created: 2022/10/03 18:10:41 by inwagner          #+#    #+#             */
+/*   Updated: 2022/10/15 18:20:48 by inwagner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strdup(const char *s1)
 	char	*dup;
 	size_t	len;
 
+	if (!s1)
+		return (0);
 	len = ft_strlen(s1) + 1;
 	dup = (char *)ft_calloc(len, sizeof(char));
 	if (!dup)

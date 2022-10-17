@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iw90 <iw90@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: inwagner <inwagner@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/09 20:47:34 by inwagner          #+#    #+#             */
-/*   Updated: 2022/10/01 21:29:14 by iw90             ###   ########.fr       */
+/*   Created: 2022/10/03 18:08:48 by inwagner          #+#    #+#             */
+/*   Updated: 2022/10/15 22:06:24 by inwagner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_calloc(size_t nitems, size_t size)
 {
 	void	*dst;
 
-	if (!nitems || !size || size > SIZE_MAX / nitems)
+	if (!nitems || !size || size > INT_MAX / nitems)
 		return (0);
 	dst = malloc(nitems * size);
 	if (!dst)
