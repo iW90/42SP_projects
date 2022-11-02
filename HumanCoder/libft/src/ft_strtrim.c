@@ -35,3 +35,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	}
 	return (ft_substr(s1, i, size));
 }
+
+/*
+Copia `s1` removendo caracteres localizados em `set`.
+Retorna a string criada ou nulo caso a alocação falhe.
+*/

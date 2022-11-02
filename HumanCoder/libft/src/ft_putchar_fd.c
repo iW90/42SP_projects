@@ -16,3 +16,8 @@ void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
 }
+
+/*
+Imprime o caractere `c` no file descriptor.
+Retorna nada.
+*/

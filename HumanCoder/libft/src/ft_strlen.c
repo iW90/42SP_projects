@@ -23,3 +23,8 @@ size_t	ft_strlen(const char *src)
 		len++;
 	return (len);
 }
+
+/*
+Conta os caracteres em uma string ignorando o nulo no final.
+Retorna o número de bytes na string.
+*/

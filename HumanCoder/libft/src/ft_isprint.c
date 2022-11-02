@@ -18,3 +18,8 @@ int	ft_isprint(int c)
 		return (1);
 	return (0);
 }
+
+/*
+Checa se o caractere é imprimível ou não.
+Retorna um inteiro não-zero (x < 0 || x > 0) caso verdade, 0 caso falso.
+*/

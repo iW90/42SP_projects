@@ -18,3 +18,8 @@ int	ft_isdigit(int c)
 		return (1);
 	return (0);
 }
+
+/*
+Checa se o caractere é um número (0-9) ou não.
+Retorna um inteiro não-negativo (x > 0) caso verdade, 0 caso falso.
+*/

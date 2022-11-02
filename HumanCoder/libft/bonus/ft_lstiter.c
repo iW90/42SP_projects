@@ -20,3 +20,8 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 		lst = lst->next;
 	}
 }
+
+/*
+Itera a lista `lst` e aplica a função `f` para cada node.
+Retorna nada.
+*/

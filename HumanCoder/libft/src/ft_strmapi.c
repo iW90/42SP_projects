@@ -30,3 +30,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	}
 	return (str);
 }
+
+/*
+Aplica a função `f` para cada caractere da string `s` passando seu index como primeiro argumento.
+Retorna a string criada pela função `f`, retorna nulo caso a alocação falhe.
+*/

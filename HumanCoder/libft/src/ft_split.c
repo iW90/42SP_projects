@@ -74,3 +74,8 @@ static int	ft_substrlen(char const *s, int start, char c)
 	}
 	return (len);
 }
+
+/*
+Picota `s` em várias strings utilizando `c` como um delimitador, deve ter nulo em cada string.
+Retorna as strings ou nulo se a alocação falhar.
+*/

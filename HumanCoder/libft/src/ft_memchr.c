@@ -29,3 +29,8 @@ void	*ft_memchr(const void *src, int c, size_t n)
 	}
 	return (0);
 }
+
+/*
+Procura pela primeira ocorrência de `c` em `s` até `n` bytes.
+Retorna um ponteiro na posição em q c foi achado, ou um nulo caso não ache.
+*/

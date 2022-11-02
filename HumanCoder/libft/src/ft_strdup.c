@@ -26,3 +26,8 @@ char	*ft_strdup(const char *s1)
 	ft_strlcpy(dup, s1, len);
 	return (dup);
 }
+
+/*
+Duplica a string `s`.
+Retorna um ponteiro para a string criada ou retorna nulo se não houver espaço na memória.
+*/

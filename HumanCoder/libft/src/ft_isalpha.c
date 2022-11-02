@@ -21,3 +21,8 @@ int	ft_isalpha(int c)
 	else
 		return (0);
 }
+
+/*
+Checa se o caractere é uma letra do alfabeto (a-z, A-Z).
+Retorna um inteiro não-zero (x < 0 || x > 0) se verdade, 0 se falso.
+*/

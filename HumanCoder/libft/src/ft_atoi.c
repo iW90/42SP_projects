@@ -47,3 +47,8 @@ static int	ft_isspace(int c)
 		return (1);
 	return (0);
 }
+
+/*
+Converte a primeira sequência numérica de `nptr` para seu valor em `int`.
+Retorna o valor convertido.
+*/

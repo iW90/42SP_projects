@@ -31,3 +31,8 @@ int	ft_strncmp(const char *stra, const char *strb, size_t n)
 	}
 	return (0);
 }
+
+/*
+Compara `n` bytes de `s1` e `s2`.
+Retorna a diferença entre `s1` e `s2`.
+*/

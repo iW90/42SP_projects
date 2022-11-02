@@ -27,3 +27,8 @@ char	*ft_strrchr(const char *src, int c)
 	}
 	return (0);
 }
+
+/*
+Procura na string `s` pela última ocorrência do caractere `c`.
+Retorna um ponteiro para o caractere localizado na string ou nulo caso não ache.
+*/

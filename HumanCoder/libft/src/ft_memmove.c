@@ -30,3 +30,8 @@ void	*ft_memmove(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
+
+/*
+Copia `n` bytes de `src` para `dest`.
+Retorna um ponteiro para `dest`.
+*/

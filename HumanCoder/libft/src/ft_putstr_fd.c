@@ -16,3 +16,8 @@ void	ft_putstr_fd(char *s, int fd)
 {
 	write(fd, s, ft_strlen(s));
 }
+
+/*
+Imprime a string `s` no file descriptor.
+Retorna nada.
+*/

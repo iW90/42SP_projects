@@ -24,3 +24,8 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		lastlst->next = new;
 	}
 }
+
+/*
+Adiciona um novo node no final da lista.
+Retorna nada.
+*/

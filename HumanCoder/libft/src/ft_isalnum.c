@@ -18,3 +18,8 @@ int	ft_isalnum(int c)
 		return (1);
 	return (0);
 }
+
+/*
+Checa se o argumento inserido é um caractere alfanumérico (letra e/ou número) ou não.
+Retorna 1 se verdadeiro, 0 se for falso.
+*/

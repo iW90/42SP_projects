@@ -33,3 +33,8 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (newlst);
 }
+
+/*
+Itera a list `lst` e aplica a função `f` para cada node; Cria uma nova lista através da função `f`, a função `del` é utilizada quando é necessário deletar o conteúdo de um node.
+Retorna a nova lista, nulo se a alocação falhar.
+*/

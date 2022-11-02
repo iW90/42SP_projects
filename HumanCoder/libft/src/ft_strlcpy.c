@@ -32,3 +32,8 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t len)
 	lsrc = ft_strlen(src);
 	return (lsrc);
 }
+
+/*
+Copia até `size - 1` bytes de `src` para `dst` adicionando um nulo no final.
+Retorna o tamanho total da string que tentou criar.
+*/

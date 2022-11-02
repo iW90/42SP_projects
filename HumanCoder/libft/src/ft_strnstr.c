@@ -28,3 +28,8 @@ char	*ft_strnstr(const char *big, const char *little, size_t n)
 	}
 	return (0);
 }
+
+/*
+Procura a primeira ocorrência da string `little` na string `big` até `len` bytes.
+Retorna `big` se `little` for uma string vazia, retorna nulo se não achar `little` dentro de `big`, retorna a posição de `big` onde `little` se inicia.
+*/

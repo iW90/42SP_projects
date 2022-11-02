@@ -56,3 +56,8 @@ static int	ft_intlen(int n)
 		return (1);
 	return (1 + ft_intlen(n / 10));
 }
+
+/*
+Transforma o `n` número inserido em uma string.
+Retorna a string ou nulo se a alocação falhar.
+*/

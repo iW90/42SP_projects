@@ -29,3 +29,8 @@ void	*ft_memset(void *src, int c, size_t n)
 	}
 	return (src);
 }
+
+/*
+Copia o caractere `c` para os primeiros `n` caracteres em `*str`.
+Retorna o ponteiro `str`.
+*/

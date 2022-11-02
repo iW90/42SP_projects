@@ -26,3 +26,8 @@ int	ft_lstsize(t_list *lst)
 	}
 	return (size);
 }
+
+/*
+Conta o número de nodes na lista.
+Retorna o tamanho da lista.
+*/

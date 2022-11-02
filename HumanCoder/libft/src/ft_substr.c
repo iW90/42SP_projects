@@ -30,3 +30,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	ft_memcpy(sub, &s[start], len);
 	return (sub);
 }
+
+/*
+Cópia parte da string `s` a partir da posição `start` até `len`.
+Retorna a substring ou nulo não conseguir alocar.
+*/

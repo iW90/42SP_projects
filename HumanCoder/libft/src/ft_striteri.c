@@ -23,3 +23,8 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		i++;
 	}
 }
+
+/*
+Aplica a função `f` para cada caractere da string `s` passando seu index como primeiro argumento.
+Não retorna nada.
+*/

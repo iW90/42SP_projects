@@ -27,3 +27,8 @@ char	*ft_strchr(const char *src, int c)
 	}
 	return (0);
 }
+
+/*
+Procura na string `s` pela primeira ocorrência do caractere `c`.
+Retorna um ponteiro para o caractere localizado na string ou nulo caso não ache.
+*/

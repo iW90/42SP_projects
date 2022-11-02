@@ -24,3 +24,8 @@ void	*ft_calloc(size_t nitems, size_t size)
 	ft_bzero(dst, nitems * size);
 	return (dst);
 }
+
+/*
+Aloca memória para `nitems` até `size` enchendo de 0.
+Retorna um ponteiro se `nitems` e `size` são não-zero, retorna nulo caso `nitems` ou `size` for igual a 0.
+*/

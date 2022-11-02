@@ -24,3 +24,8 @@ t_list	*ft_lstnew(void *content)
 	newnode->next = 0;
 	return (newnode);
 }
+
+/*
+Aloca um novo node.
+Retorna o novo node.
+*/

@@ -25,3 +25,8 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	}
 	*lst = 0;
 }
+
+/*
+Deleta e libera a memória do node e de todos depois dele, o ponteiro para a lista deve se tornar nulo.
+Retorna nada.
+*/

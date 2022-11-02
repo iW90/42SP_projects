@@ -31,3 +31,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t len)
 	dst[ldst + i] = '\0';
 	return (ldst + lsrc);
 }
+
+/*
+Concatena no final de `dst` `size - 1` bytes de `src`.
+Retorna o tamanho da string que tentou concatenar (dst + src).
+*/
