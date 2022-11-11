@@ -10,10 +10,10 @@
 
 ## Projetos
 
-- [ ] Libft *(desenvolvimento)*
-- [ ] get_next_line
+- [x] Libft
+- [x] get_next_line
+- [ ] ft_printf *(desenvolvimento)*
 - [ ] Born2beroot
-- [ ] ft_printf
 - [ ] push_swap
 - [ ] minitalk || pipex
 - [ ] so_long || FdF || fract-ol
