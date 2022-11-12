@@ -23,6 +23,7 @@
 char	*get_next_line(int fd);
 char	*read_line(int fd, char *buff);
 char	*get_line_buff(char *buff);
+char	*copy_line_buff(char *buff, char *first_line);
 char	*redefine_buff(char *buff);
 
 size_t	ft_strlen(const char *src);

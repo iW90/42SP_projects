@@ -6,7 +6,7 @@
 /*   By: inwagner <inwagner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 18:09:06 by inwagner          #+#    #+#             */
-/*   Updated: 2022/11/11 20:32:15 by inwagner         ###   ########.fr       */
+/*   Updated: 2022/11/11 21:34:25 by inwagner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*get_next_line(int fd)
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (NULL);
 	buff[fd] = read_line(fd, buff[fd]);
-	if (!buff)
+	if (!buff[fd])
 		return (NULL);
 	line = get_line_buff(buff[fd]);
 	buff[fd] = redefine_buff(buff[fd]);
@@ -32,6 +32,8 @@ char	*read_line(int fd, char *buff)
 	ssize_t		read_bytes;
 	char		*temp_str;
 
+	if (fd < 0 || BUFFER_SIZE <= 0)
+		return (NULL);
 	temp_str = (char *)malloc((sizeof(char) * BUFFER_SIZE + 1));
 	if (!temp_str)
 		return (NULL);

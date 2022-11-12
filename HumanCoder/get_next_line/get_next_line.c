@@ -6,7 +6,7 @@
 /*   By: inwagner <inwagner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 18:09:18 by inwagner          #+#    #+#             */
-/*   Updated: 2022/11/11 20:32:25 by inwagner         ###   ########.fr       */
+/*   Updated: 2022/11/11 21:08:52 by inwagner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,8 @@ char	*read_line(int fd, char *buff)
 	ssize_t		read_bytes;
 	char		*temp_str;
 
+	if (fd < 0 || BUFFER_SIZE <= 0)
+		return (NULL);
 	temp_str = (char *)malloc((sizeof(char) * BUFFER_SIZE + 1));
 	if (!temp_str)
 		return (NULL);

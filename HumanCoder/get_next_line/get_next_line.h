@@ -6,7 +6,7 @@
 /*   By: inwagner <inwagner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 18:09:22 by inwagner          #+#    #+#             */
-/*   Updated: 2022/11/11 20:28:24 by inwagner         ###   ########.fr       */
+/*   Updated: 2022/11/11 20:56:52 by inwagner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define GET_NEXT_LINE_H
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 8
+#  define BUFFER_SIZE -2
 # endif
 
 # include <stdlib.h>
