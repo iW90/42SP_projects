@@ -6,7 +6,7 @@
 
 Piscina é o nome dado ao processo seletivo da **École 42**, com foco inicial em UNIX e linguagem C.
 
-Este processo possui duração de 26 dias corridos, presencialmente em na capital de SP.
+Este processo possui duração de 26 dias corridos, presencialmente, na capital de SP.
 
 ## Atividades
 
