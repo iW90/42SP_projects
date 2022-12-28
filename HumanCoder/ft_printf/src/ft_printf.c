@@ -6,7 +6,7 @@
 /*   By: inwagner <inwagner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/19 19:58:04 by inwagner          #+#    #+#             */
-/*   Updated: 2022/12/23 15:54:41 by inwagner         ###   ########.fr       */
+/*   Updated: 2022/12/27 21:28:34 by inwagner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,14 +46,14 @@ size_t	read_type(char *str, va_list lst)
 		printed = print_str(va_arg(lst, char *));
 	else if (*str == 'd' || *str == 'i')
 		printed = print_nbr(va_arg(lst, int), "0123456789", 0);
-	else if (*str == 'x')
-		printed = print_nbr(va_arg(lst, unsigned int), "0123456789abcdef", 0);
-	else if (*str == 'X')
-		printed = print_nbr(va_arg(lst, unsigned int), "0123456789ABCDEF", 0);
 	else if (*str == 'u')
 		printed = print_nbr(va_arg(lst, unsigned int), "0123456789", 0);
+	else if (*str == 'x')
+		printed = print_hex(va_arg(lst, unsigned int), "0123456789abcdef", 0);
+	else if (*str == 'X')
+		printed = print_hex(va_arg(lst, unsigned int), "0123456789ABCDEF", 0);
 	else if (*str == 'p')
-		printed = print_ptr(va_arg(lst, unsigned long long));
+		printed = print_ptr(va_arg(lst, size_t));
 	else if (*str == '%')
 		printed = write(1, "%", 1);
 	return (printed);
