@@ -6,7 +6,7 @@
 /*   By: inwagner <inwagner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/19 19:58:04 by inwagner          #+#    #+#             */
-/*   Updated: 2022/12/27 21:26:03 by inwagner         ###   ########.fr       */
+/*   Updated: 2023/01/03 10:41:39 by inwagner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include <stdarg.h>
 
 int		ft_printf(const char *str, ...);
+size_t	read_text(char *str, va_list lst);
 size_t	read_type(char *str, va_list lst);
 
 int		print_chr(char c);

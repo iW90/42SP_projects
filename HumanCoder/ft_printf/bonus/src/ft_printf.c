@@ -6,13 +6,11 @@
 /*   By: inwagner <inwagner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/19 19:58:04 by inwagner          #+#    #+#             */
-/*   Updated: 2023/01/01 20:33:50 by inwagner         ###   ########.fr       */
+/*   Updated: 2023/01/03 11:32:37 by inwagner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-
-size_t	read_hash(char *str, va_list lst);
 
 int	ft_printf(const char *str, ...)
 {
@@ -22,6 +20,16 @@ int	ft_printf(const char *str, ...)
 	if (!str)
 		return (-1);
 	va_start(lst, str);
+	printed = read_text((char *)str, lst);
+	va_end(lst);
+	return (printed);
+}
+
+size_t	read_text(char *str, va_list lst)
+{
+	size_t	printed;
+
+	printed = 0;
 	while (*str)
 	{
 		if (*str == '%')
@@ -29,9 +37,9 @@ int	ft_printf(const char *str, ...)
 			str++;
 			if (*str == '#')
 			{
-				printed = read_hash((char *)str, lst);
+				printed += read_hash((char *)str, lst);
 				str++;
-				if (*str == 'c' || *str == 's' || *str == 'd' || *str == 'i' ||\
+				if (*str == 'c' || *str == 's' || *str == 'd' || *str == 'i' || \
 					*str == 'u' || *str == 'p' || *str == '%')
 					str++;
 			}
@@ -42,7 +50,6 @@ int	ft_printf(const char *str, ...)
 			printed += write(1, &(*str), 1);
 		str++;
 	}
-	va_end(lst);
 	return (printed);
 }
 
@@ -82,8 +89,8 @@ size_t	read_hash(char *str, va_list lst)
 		printed += write(1, str, 1);
 		printed += read_type((char *)str, lst);
 	}
-	else if (*str != 'c' || *str != 's' || *str != 'd' || *str != 'i' ||\
-			 *str != 'u' || *str != 'p' || *str != '%')
+	else if (*str != 'c' || *str != 's' || *str != 'd' || *str != 'i' || \
+			*str != 'u' || *str != 'p' || *str != '%')
 				printed = read_type((char *)str, lst);
 	else
 		printed = write(1, "%#", 2);

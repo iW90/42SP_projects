@@ -6,7 +6,7 @@
 /*   By: inwagner <inwagner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/19 19:58:04 by inwagner          #+#    #+#             */
-/*   Updated: 2022/12/27 21:28:34 by inwagner         ###   ########.fr       */
+/*   Updated: 2023/01/03 10:48:28 by inwagner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,16 @@ int	ft_printf(const char *str, ...)
 	if (!str)
 		return (-1);
 	va_start(lst, str);
+	printed = read_text((char *)str, lst);
+	va_end(lst);
+	return (printed);
+}
+
+size_t	read_text(char *str, va_list lst)
+{
+	size_t	printed;
+
+	printed = 0;
 	while (*str)
 	{
 		if (*str == '%')
@@ -31,7 +41,6 @@ int	ft_printf(const char *str, ...)
 			printed += write(1, &(*str), 1);
 		str++;
 	}
-	va_end(lst);
 	return (printed);
 }
 
