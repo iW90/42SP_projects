@@ -246,4 +246,8 @@ Configurações em ****
 
 74. \[!!] Finish the installation: `Continue`
 
-> Seu servidor será reiniciado, e agora você pode fazer uma pausa para o café antes de continuar.
+> Seu servidor será reiniciado.
+
+---
+
+> Agora você pode fazer uma pausa para o café antes de continuar, o restante é no prompt do seu próprio servidor. =)

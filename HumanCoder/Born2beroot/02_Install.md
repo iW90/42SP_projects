@@ -157,3 +157,7 @@ O AppArmor protege proativamente o sistema operacional e os aplicativos contra a
 
 - `sudo aa-status`: Exibe o status do AppArmor (já vem instalado com o Debian nas novas versões).
 	> Usado pra mostrar que ele está instalado e ativo.
+
+---
+
+> Quase tudo configurado e instalado! Agora é a parte do Script.
