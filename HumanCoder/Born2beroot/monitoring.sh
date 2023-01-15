@@ -49,4 +49,5 @@ wall "
 	#Connexions TCP: ${ctcp} ESTABLISHED
 	#User log: ${ulog}
 	#Network: IP ${adip} (${amac})
-	#Sudo: ${tsud} cmd"
+	#Sudo: ${tsud} cmd
+	"
