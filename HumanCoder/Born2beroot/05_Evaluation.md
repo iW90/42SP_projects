@@ -1,5 +1,16 @@
 # CONHECIMENTOS NECESSÁRIOS
 
+## Gerando a assinatura
+
+No Shell:
+
+`sha1sum <dir/fileDebian.vdi>`: Será gerada uma chave.
+
+Criar um arquivo chamado `signature.txt` e colar a chave. Este arquivo que deve ser entregue no projeto.
+
+Para cada avaliação, crie um Snapshot para que mexa na cópia sem alterar o arquivo original.
+
+
 ## Questões
 
 P: Por que Debian?
