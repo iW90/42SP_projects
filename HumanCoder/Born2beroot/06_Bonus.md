@@ -59,7 +59,7 @@ Vamos instalar o Fail2Ban e configurá-lo para bloquear tentativas remotas de co
 
 
 
-## Parte 03 - Fazer um site no wordpress
+## Parte 03 - Fazer um site no wordpress (unfinished)
 
 ### Lighttpd
 
