@@ -61,40 +61,29 @@ R: SSH, (Secure Shell ou Secure Socket Shell), é um protocolo de rede que forne
 
 - Criação de novo usuário:
 
+```
 | You have to create a new user here.   |
-
 | $ sudo adduser username               | <- creating new user (yes (no))
-
 | $ sudo chage -l username              | <- Verify password expire info for new user
-
 | $ sudo adduser username sudo          |
-
 | $ sudo adduser username user42        | <- assign new user to sudo and user42 groups
+```
 
 - Checklist:
 
+```
 | 1) lsblk                              1 <- verifica as partições
-
 | 2) sudo aa-status                     2 <- AppArmor status
-
 | 3) getent group sudo                  3 <- sudo group users
-
 | 4) getent group user42                4 <- user42 group users
-
 | 5) sudo service ssh status            5 <- ssh status
-
 | 6) sudo ufw status                    6 <- ufw status
-
 | 7) ssh username@ipadress -p 4242      7 <- conecte-se à VM de sua máquina host (física) via SSH
-
 | 8) nano /etc/sudoers.d/sudoconfig     8 <- yes, sudo config file. You can $ ls /etc/sudoers.d first
-
 | 9) nano /etc/login.defs               9 <- política de expiração da senha
-
 | 10) nano /etc/pam.d/common-password  10 <- política de senha
-
 | 11) sudo crontab -l                  11 <- agendamento cron
-
+```
 
 Como mudar o hostname?
 
