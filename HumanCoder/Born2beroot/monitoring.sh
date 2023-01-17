@@ -46,7 +46,7 @@ wall "
 	#CPU load: ${cpul}
 	#Last boot: ${boot}
 	#LVM use: ${lvmu}
-	#Connexions TCP: ${ctcp} ESTABLISHED
+	#Connections TCP: ${ctcp} ESTABLISHED
 	#User log: ${ulog}
 	#Network: IP ${adip} (${amac})
 	#Sudo: ${tsud} cmd
