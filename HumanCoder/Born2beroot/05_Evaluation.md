@@ -81,8 +81,7 @@ R: SSH, (Secure Shell ou Secure Socket Shell), é um protocolo de rede que forne
 | 7) ssh username@ipadress -p 4242      7 <- conecte-se à VM de sua máquina host (física) via SSH
 | 8) nano /etc/sudoers.d/sudoconfig     8 <- yes, sudo config file. You can $ ls /etc/sudoers.d first
 | 9) nano /etc/login.defs               9 <- política de expiração da senha
-| 10) nano /etc/pam.d/common-password  10 <- política de senha
-| 11) sudo crontab -l                  11 <- agendamento cron
+| 10) sudo crontab -l                  10 <- agendamento cron
 ```
 
 Como mudar o hostname?
