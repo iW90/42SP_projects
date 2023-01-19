@@ -94,30 +94,30 @@ Como mudar o hostname?
 
 Você verá vários diretórios (01 2B 9S 4D etc). Eles contém os logs.
 
+```
 sudo apt update
-
 ls
+```
 
 Agora você vê um novo diretório.
 
+```
 cd <nameofnewdirectory> && ls
-  
-cat log                               <- Input log
-                                         
+cat log                               <- Input log                             
 cat ttyout                            <- Output log
-  
+```
 
 Como adicionar e remover a porta 8080 no UFW?
-  
-$ sudo ufw allow 8080                 <- allow
-                                         
-$ sudo ufw status                     <- check
-  
-$ sudo ufw deny 8080                  <- deny (yes yes)
+
+```
+sudo ufw allow 8080                 <- allow
+sudo ufw status                     <- check
+sudo ufw deny 8080                  <- deny (yes yes)
+```
 
 Como rodar o script a cada 30 segundos?
                                          
-$ sudo crontab -e
+`sudo crontab -e`
                                          
 Remove or commit previous cron "schedule" and add next lines in crontab file
 
@@ -127,4 +127,23 @@ Remove or commit previous cron "schedule" and add next lines in crontab file
 
 Para não rodar na inicialização, basta remover om comentar a linha abaixo do crontab file:
 
-@reboot /path/to/monitoring.sh
+`@reboot /path/to/monitoring.sh`
+
+Cron:
+
+```
+sudo crontab -u root -e            Modifica o tempo do cron
+sudo /etc/init.d/cron stop         Interrompe o cron
+sudo /etc/init.d/cron start        Inicia o cron
+```
+
+Mostra os serviços instalados
+
+`service --status-all`
+
+Fail2Ban:
+`fail2ban-client status sshd`   -> Lista os banidos
+`systemctl status fail2ban`     -> Verifica se ativo
+`systemctl restart fail2ban`    -> Reinicia o serviço
+`systemctl stop fail2ban`       -> Interrompe o serviço
+`systemctl start fail2ban`      -> Interrompe o serviço
