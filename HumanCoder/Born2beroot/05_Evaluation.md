@@ -142,8 +142,11 @@ Mostra os serviços instalados
 `service --status-all`
 
 Fail2Ban:
-`fail2ban-client status sshd`   -> Lista os banidos
-`systemctl status fail2ban`     -> Verifica se ativo
-`systemctl restart fail2ban`    -> Reinicia o serviço
-`systemctl stop fail2ban`       -> Interrompe o serviço
-`systemctl start fail2ban`      -> Interrompe o serviço
+
+```
+fail2ban-client status sshd   -> Lista os banidos
+systemctl status fail2ban     -> Verifica se ativo
+systemctl restart fail2ban    -> Reinicia o serviço
+systemctl stop fail2ban       -> Interrompe o serviço
+systemctl start fail2ban      -> Interrompe o serviço
+```
