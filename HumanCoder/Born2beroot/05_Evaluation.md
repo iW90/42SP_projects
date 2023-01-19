@@ -62,11 +62,10 @@ R: SSH, (Secure Shell ou Secure Socket Shell), é um protocolo de rede que forne
 - Criação de novo usuário:
 
 ```
-| You have to create a new user here.   |
-| $ sudo adduser username               | <- creating new user (yes (no))
-| $ sudo chage -l username              | <- Verify password expire info for new user
-| $ sudo adduser username sudo          |
-| $ sudo adduser username user42        | <- assign new user to sudo and user42 groups
+| sudo adduser username               | <- cria novo user
+| sudo chage -l username              | <- verifica info sobre senha do user
+| sudo adduser username sudo          | <- adiciona o user ao grupo sudo
+| sudo adduser username user42        | <- adiciona o user ao grupo user42
 ```
 
 - Checklist:
