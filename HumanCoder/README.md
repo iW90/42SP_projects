@@ -16,6 +16,7 @@
 ![Libft](https://game.42sp.org.br/static/assets/achievements/libftm.png)
 ![Get Next Line](https://game.42sp.org.br/static/assets/achievements/get_next_linem.png)
 ![FT_Printf](https://game.42sp.org.br/static/assets/achievements/ft_printfm.png)
+![Born2beroot](https://game.42sp.org.br/static/assets/achievements/born2berootm.png)
 
 </span>
 
