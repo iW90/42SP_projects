@@ -15,6 +15,4 @@ A **42** é uma escola francesa de programação que utiliza o *"peer-to-peer"* 
 - [ ] HumanCoder
 - [ ] Especializações
 
-## Projetos entregues:
-
 
