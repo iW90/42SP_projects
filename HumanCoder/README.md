@@ -10,21 +10,30 @@
 
 ## Projetos
 
+### Fase 1: Entrando em Órbita
+
 - [x] Libft
 - [x] get_next_line
 - [x] ft_printf
 - [x] Born2beroot
 - [ ] so_long || FdF || fract-ol: **FdF** *(desenvolvimento)*
 - [ ] minitalk || pipex
+
+### Fase 2: Ampliando Horizontes
+
 - [ ] push_swap
 - [ ] minishell
 - [ ] Philosophers
 - [ ] NetPractice
-- [ ] cub3d/miniRT
+- [ ] cub3d || miniRT
+
+### Fase 3: Explorando o Espaço
+
 - [ ] CPP Module (00 a 08)
-- [ ] ft_irc || webserv
-- [ ] ft_container
+- [ ] ft_containers
 - [ ] Inception
+- [ ] ft_irc || webserv
+- [ ] ft_transcendence
 
 ## Avaliações
 
