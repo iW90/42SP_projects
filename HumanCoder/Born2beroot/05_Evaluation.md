@@ -13,45 +13,37 @@ Para cada avaliação, crie um Snapshot para que mexa na cópia sem alterar o ar
 
 ## Questões
 
+P: Qual a diferença entre Debian e Rocky?
+
+> R: O Rocky surgiu após o encerramento das atividades do CentOS em 2020. Apesar de ser open-source, existe uma empresa por trás, a Red Hat, fazendo com que tenha um pouco mais de estabilidade e seja preferida pelas empresas. Não possui tantos pacotes disponíveis quanto o Debian, mas o suficiente para suprir as necessidades. Já o Debian existe desde 1993, e desde sempre é mantido 100% pela comunidade e gerenciado por um grupo de voluntários. Possui muito mais pacotes, embora esses dependam da disponibilidade de seus mantenedores, o que siginifica que muitos podem estar desatualizados.
+
 P: Por que Debian?
 
-R: É mais fácil de instalar e configurar do que o Rocky.
-
-
+> R: É mais fácil de instalar e configurar do que o Rocky.
 
 P: O que é uma máquina virtual?
 
-R: A Virtual Machine (VM) é um recurso que simula um computador físico para executar programas e aplicativos. Assim você pode executar seu próprio sistema operacional em um  ambiente separado, sem que ele "saiba" que está rodando em outro sistema.
+> R: A Virtual Machine (VM) é um recurso que simula um computador físico para executar programas e aplicativos. Assim você pode executar seu próprio sistema operacional em um  ambiente separado, sem que ele "saiba" que está rodando em outro sistema.
 
+P: Qual é o propósito da VM?
 
-
-Q: Qual é o propósito da VM?
-
-R: As VMs podem ser implantadas para acomodar diferentes níveis de necessidades de poder de processamento, para executar software que requer uma sistema operacional diferente ou para testar aplicativos em um ambiente seguro e protegido.
-
-
+> R: As VMs podem ser implantadas para acomodar diferentes níveis de necessidades de poder de processamento, para executar software que requer uma sistema operacional diferente ou para testar aplicativos em um ambiente seguro e protegido.
 
 P: Como funciona?
 
-R: VM funcionando por meio da tecnologia "Virtualização". A virtualização usa software para simular hardware virtual que permite VMs executarem em um único host.
-
-
+> R: VM funcionando por meio da tecnologia "Virtualização". A virtualização usa software para simular hardware virtual que permite VMs executarem em um único host.
 
 P: Qual a diferença entre aptitude e apt?
 
-R: O Aptitude é um gerenciador de pacotes de alto nível enquanto o APT é um gerenciador de pacotes de nível inferior que pode ser usado por outros gerenciadores de pacotes de nível superior. O Aptitude é mais vasto em funcionalidades do que o apt-get e integra funcionalidades do apt-get e suas outras variantes, incluindo apt-mark e apt-cache. Além disso, o Aptitude possui uma interface de usuário mais interativa, e é considerado um gerenciador de pacotes melhor.
-
-
+> R: O Aptitude é um gerenciador de pacotes de alto nível enquanto o APT é um gerenciador de pacotes de nível inferior que pode ser usado por outros gerenciadores de pacotes de nível superior. O Aptitude é mais vasto em funcionalidades do que o apt-get e integra funcionalidades do apt-get e suas outras variantes, incluindo apt-mark e apt-cache. Além disso, o Aptitude possui uma interface de usuário mais interativa, e é considerado um gerenciador de pacotes melhor.
 
 P: O que é AppArmor?
 
-R: AppArmor ("Application Armor") é um módulo de segurança do kernel do Linux que permite ao administrador do sistema restringir os acessos dos programas através de perfis de usuários.
-
-
+> R: AppArmor ("Application Armor") é um módulo de segurança do kernel do Linux que permite ao administrador do sistema restringir os acessos dos programas através de perfis de usuários.
 
 P: O que é SSH?
 
-R: SSH, (Secure Shell ou Secure Socket Shell), é um protocolo de rede que fornece aos usuários, particularmente ao sistema administrador, uma maneira segura de acessar um computador em uma rede não segura. O Secure Shell fornece autenticação de senha forte e autenticação de chave pública, bem como comunicações de dados criptografados entre dois computadores conectados por uma rede aberta, como a Internet.
+> R: SSH, (Secure Shell ou Secure Socket Shell), é um protocolo de rede que fornece aos usuários, particularmente ao sistema administrador, uma maneira segura de acessar um computador em uma rede não segura. O Secure Shell fornece autenticação de senha forte e autenticação de chave pública, bem como comunicações de dados criptografados entre dois computadores conectados por uma rede aberta, como a Internet.
 
 
 
@@ -59,93 +51,95 @@ R: SSH, (Secure Shell ou Secure Socket Shell), é um protocolo de rede que forne
 
 ## CLI
 
-- Criação de novo usuário:
+> Se não estiver no root, utilize sudo.
+
+#### Criação de novo usuário:
 
 ```
-| sudo adduser username               | <- cria novo user
-| sudo chage -l username              | <- verifica info sobre senha do user
-| sudo adduser username sudo          | <- adiciona o user ao grupo sudo
-| sudo adduser username user42        | <- adiciona o user ao grupo user42
+| adduser username                       | <- cria novo user
+| chage -l username                      | <- verifica info sobre senha do user
+| adduser username sudo                  | <- adiciona o user ao grupo sudo
+| adduser username user42                | <- adiciona o user ao grupo user42
 ```
 
-- Checklist:
+#### Checklist:
 
 ```
-| 1) lsblk                              1 <- verifica as partições
-| 2) sudo aa-status                     2 <- AppArmor status
-| 3) getent group sudo                  3 <- sudo group users
-| 4) getent group user42                4 <- user42 group users
-| 5) sudo service ssh status            5 <- ssh status
-| 6) sudo ufw status                    6 <- ufw status
-| 7) ssh username@ipadress -p 4242      7 <- conecte-se à VM de sua máquina host (física) via SSH
-| 8) nano /etc/sudoers.d/sudoconfig     8 <- yes, sudo config file. You can $ ls /etc/sudoers.d first
-| 9) nano /etc/login.defs               9 <- política de expiração da senha
-| 10) sudo crontab -l                  10 <- agendamento cron
+| dpkg -l | grep xorg                    | <- verifica as interfaces gráficas instaladas
+| uname -v                               | <- nome do sistema em uso
+| hostname                               | <- mostra o nome do host
+| lsblk                                  | <- verifica as partições
+| aa-status                              | <- AppArmor status
+| getent group sudo                      | <- sudo group users
+| getent group user42                    | <- user42 group users
+| service ssh status                     | <- ssh status
+| service ufw status                     | <- ufw status
+| ssh username@ipadress -p 4242          | <- conecte-se à VM de sua máquina host (física) via SSH
+| nano /etc/sudoers.d/sudoconfig         | <- arquivo de configuração do sudo. Você pode usar "ls /etc/sudoers.d" primeiro
+| nano /etc/login.defs                   | <- política de expiração da senha
+| nano /etc/security/pwquality.conf      | <- política de expiração de senha pt2
+| crontab -l                             | <- agendamento cron
+| service --status-all                   | <- serviços instalados
 ```
 
-Como mudar o hostname?
-
-`sudo nano /etc/hostname`
-
-
-
-`cd /var/log/sudo/00/00 && ls`       Onde está o sudo logs em /var/log/sudo?
-
-Você verá vários diretórios (01 2B 9S 4D etc). Eles contém os logs.
+#### Novo usuário e grupo:
 
 ```
-sudo apt update
-ls
+| sudo adduser <user>                    | <- Cria um novo usuário
+| sudo addgroup <groupname>              | <- Cria um novo grupo
+| sudo adduser <user> <groupname>        | <- Adiciona o usuário no grupo.
 ```
 
-Agora você vê um novo diretório.
+#### Como mudar o hostname:
 
 ```
-cd <nameofnewdirectory> && ls
-cat log                               <- Input log                             
-cat ttyout                            <- Output log
+| nano /etc/hostname`                    | <- Bastra trocar o nome no arquivo
+| sudo reboot                            | <- reinicia o sistema
 ```
 
-Como adicionar e remover a porta 8080 no UFW?
+#### Logs do sudo:
 
 ```
-sudo ufw allow 8080                 <- allow
-sudo ufw status                     <- check
-sudo ufw deny 8080                  <- deny (yes yes)
+| cd /var/log/sudo/00/00 && ls`          | <- você verá vários diretórios (01 2B 9S 4D etc). Eles contém os logs.
+| sudo apt update                        | <- cria um novo log
+| ls                                     | <- veja que surgiu um novo diretório
 ```
 
-Como rodar o script a cada 30 segundos?
-                                         
-`sudo crontab -e`
-                                         
-Remove or commit previous cron "schedule" and add next lines in crontab file
+#### Como adicionar e remover a porta 8080 no UFW:
 
-`*/1 * * * * /path/to/monitoring.sh`
-                                        
+```
+| ufw allow 8080                         | <- permite
+| ufw status                             | <- verifica
+| ufw deny 8080                          | <- fecha
+| sudo ufw delete deny 8080              | <- deleta
+```
+
+#### Como rodar o script a cada 30 segundos:
+
+`crontab -e`: Abre a agenda do crontab.
+
+Substitua seu comando pela linha abaixo no arquivo:
+
 `*/1 * * * * sleep 30s && /path/to/monitoring.sh`
 
-Para não rodar na inicialização, basta remover om comentar a linha abaixo do crontab file:
+Para não rodar na inicialização, basta usar o @reboot:
 
 `@reboot /path/to/monitoring.sh`
 
-Cron:
+#### Cron:
 
 ```
-sudo crontab -u root -e            Modifica o tempo do cron
-sudo /etc/init.d/cron stop         Interrompe o cron
-sudo /etc/init.d/cron start        Inicia o cron
+| sudo crontab -e                       | <- Modifica o tempo do cron
+| sudo /etc/init.d/cron stop            | <- Interrompe o cron
+| sudo /etc/init.d/cron start           | <- Inicia o cron
 ```
 
-Mostra os serviços instalados
-
-`service --status-all`
-
-Fail2Ban:
+#### Fail2Ban:
 
 ```
-fail2ban-client status sshd   -> Lista os banidos
-systemctl status fail2ban     -> Verifica se ativo
-systemctl restart fail2ban    -> Reinicia o serviço
-systemctl stop fail2ban       -> Interrompe o serviço
-systemctl start fail2ban      -> Interrompe o serviço
+| fail2ban-client status sshd           | <- Lista os banidos
+| systemctl status fail2ban             | <- Verifica se ativo
+| systemctl restart fail2ban            | <- Reinicia o serviço
+| systemctl stop fail2ban               | <- Interrompe o serviço
+| systemctl start fail2ban              | <- Interrompe o serviço
 ```

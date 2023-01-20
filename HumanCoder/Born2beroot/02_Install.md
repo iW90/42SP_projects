@@ -63,8 +63,11 @@
 3. `sudo ufw allow <porta>`: Adiciona uma regra de acesso à porta informada e já deixa aberta.
 	- Use a porta 4242.
 4. `sudo ufw status`: Visualiza quais portas estão disponíveis e abertas/fechadas.
+
 	> Para fechar uma porta, você pode usar `sudo ufw deny <porta>`.
+
 	> Para deletar a regra, você pode usar `sudo ufw delete allow <porta>` ou `sudo ufw delete <posição>` (posição é a ordem de colocação que aparece no status).
+	
 	> Http é a porta 80/tcp, então caso use `sudo ufw allow http` você abrirá essa porta.
 
 ## Criando arquivo de configurações do SUDo e configurando acessos

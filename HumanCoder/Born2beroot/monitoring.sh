@@ -1,3 +1,5 @@
+#!bin/bash
+
 # Architecture
 arch=$(uname -a)
 pcpu=$(nproc --all)
@@ -30,7 +32,7 @@ ulog=$(w -h | wc -l)
 
 # IP an MAC addresses
 adip=$(hostname -I | awk '{print $1}')
-amac=$(ifconfig | grep ether | awk '{print $2}')
+amac=$(ip addr | grep ether | awk '{print $2}')
 
 # Total sudo commands
 tsud=$(journalctl _COMM=sudo | grep COMMAND | wc -l)

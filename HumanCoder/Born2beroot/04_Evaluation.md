@@ -1,27 +1,7 @@
 # COMANDOS NECESSÁRIOS
 
-## Mostrar que não há interface gráfica instalada
+Seguindo a régua:
 
-- `dpkg -l | grep xorg`: Quando há interface instalada, é exibida uma lista de itens instalados.
-	> xorg é relacionado ao drive de vídeo.
-
-## Mostrar que o pacote UFW está ativo
-
-- `dpkg -s ufw`: Mostra que está instalado.
-- `sudo service ufw status`: Exibe o **"Status: active"** na primeira linha.
-
-# Mostrar que o pacote SSH está ativo
-
-- `sudo service ssh status`: Exibe em destaque o **Active: active (running)**.
-
-# Exibir qual sistema foi utilizado
-
-- `uname -v`: Exibe o nome do sistema em uso.
-
-# Comprovar que o user está dentro dos grupos sudo e user42
-
-- `getent group sudo`: Exibe o nome dos usuários incluídos neste grupo.
-- `getent group user42`: Exibe o nome dos usuários incluídos neste grupo.
 
 # Criar um novo user e mostrar que segue a política de senha
 

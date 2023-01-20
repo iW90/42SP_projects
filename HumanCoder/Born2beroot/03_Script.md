@@ -53,16 +53,27 @@ Devemos criar um script chamado `monitoring.sh.` que deve ser desenvolvido em Ba
 	- IP: `hostname -I | awk '{print $1}'`
 	- MAC: Opção 1: `ifconfig | grep ether | awk '{print $2}'`
 	- MAC: Opção 2: `ip link show | awk '$1 == "link/ether" {print $2}'`
+	- MAC: Opção 3: `ip addr | grep ether | awk '{print $2}'`
 12. **Sudo:** The number of commands executed with the sudo program
 	> 42 cmd
 	- `journalctl _COMM=sudo | grep COMMAND | wc -l`
 
 
+## Configurando o Sleep
+
+1. `sudo apt install bc`: Baixa e instala o pacote bc.
+2. **Pega a diferença de minutos e segundos:**
+	- `uptime -s | cut -d ":" -f 2`
+	- `uptime -s | cut -d ":" -f 3`
+3. **Calcule o número de segundos entre o décimo minuto mais próximo da hora e o tempo de inicialização:**
+	> Ex: Se o boot foi '11:43:36',  43 % 10 = 3 minutos após 40º minuto. Agora 3 * 60 = 180 para transformar em segundos e soma com os 36 segundos já passados.
+	- `bc <<< $BOOT_MIN%10*60+$BOOT_SEC`
+
 
 ## Instalando e configurando o Cron
 
-1. `sudo nano /home/inwagner/monitoring.sh`: Cria o arquivo que deverá ser executado a cada 10 minutos.
+1. `sudo nano /home/monitoring.sh`: Cria o arquivo que deverá ser executado a cada 10 minutos.
 	- Preencha seu script.
 2. `sudo crontab -u root -e`: Abre o arquivo de cronometragem.
-	- Após a linha **# m h dom mon dow command**, acrescente: `*/10 * * * * bash /home/monitoring.sh`
+	- Após a linha **# m h dom mon dow command**, acrescente: `*/10 * * * * bash /home/sleep.sh && /home/monitoring.sh`
 3. `sudo crontab -u root -l`: Verifica a agenda.
