@@ -43,3 +43,11 @@
 - [ ] Exam Rank 04
 - [ ] Exam Rank 05
 - [ ] Exam Rank 06
+
+<span align="center">
+
+![Libft](https://game.42sp.org.br/static/assets/achievements/libftm.png)
+![Get Next Line](https://game.42sp.org.br/static/assets/achievements/get_next_linem.png)
+![FT_Printf](https://game.42sp.org.br/static/assets/achievements/ft_printfm.png)
+
+</span>

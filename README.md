@@ -10,17 +10,11 @@ A **42** é uma escola francesa de programação que utiliza o *"peer-to-peer"* 
 
 ## Sequência
 
-- [x] Piscina (processo seletivo)
-- [x] WarmUp (semana introdutória)
-- [ ] HumanCoder (módulo básico)
+- [x] Piscina
+- [x] WarmUp
+- [ ] HumanCoder
 - [ ] Especializações
 
 ## Projetos entregues:
 
-<span align="center">
 
-![Libft](https://game.42sp.org.br/static/assets/achievements/libftm.png)
-![Get Next Line](https://game.42sp.org.br/static/assets/achievements/get_next_linem.png)
-![FT_Printf](https://game.42sp.org.br/static/assets/achievements/ft_printfm.png)
-
-</span>
