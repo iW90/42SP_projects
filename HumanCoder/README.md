@@ -12,11 +12,11 @@
 
 - [x] Libft
 - [x] get_next_line
-- [ ] ft_printf *(desenvolvimento)*
-- [ ] Born2beroot
-- [ ] push_swap
+- [x] ft_printf
+- [x] Born2beroot
+- [ ] so_long || FdF || fract-ol: **FdF** *(desenvolvimento)*
 - [ ] minitalk || pipex
-- [ ] so_long || FdF || fract-ol
+- [ ] push_swap
 - [ ] minishell
 - [ ] Philosophers
 - [ ] NetPractice
