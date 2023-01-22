@@ -35,7 +35,7 @@ P: Como funciona?
 
 P: Qual a diferença entre aptitude e apt?
 
-> R: O Aptitude é um gerenciador de pacotes de alto nível enquanto o APT é um gerenciador de pacotes de nível inferior que pode ser usado por outros gerenciadores de pacotes de nível superior. O Aptitude é mais vasto em funcionalidades do que o apt-get e integra funcionalidades do apt-get e suas outras variantes, incluindo apt-mark e apt-cache. Além disso, o Aptitude possui uma interface de usuário mais interativa, e é considerado um gerenciador de pacotes melhor.
+> R: O Aptitude é um gerenciador de pacotes de alto nível enquanto o APT é um gerenciador de pacotes de nível inferior que pode ser usado por outros gerenciadores de pacotes de nível superior. O Aptitude é mais vasto em funcionalidades do que o apt-get e integra funcionalidades do apt-get e suas outras variantes, incluindo apt-mark e apt-cache. Além disso, o Aptitude possui uma interface de usuário mais interativa, e é considerado um gerenciador de pacotes melhor. Mas a principal diferença é que o apt possui os poderes da Super Vaca (`apt moo`), enquanto o aptitude não possui eastereggs (`aptitude moo` -> `aptitude -v moo` -> `aptitude -vv moo` -> `aptitude -vvv moo` -> `aptitude -vvvv moo` -> `aptitude -vvvvv moo` -> `aptitude -vvvvvv moo`).
 
 P: O que é AppArmor?
 
