@@ -6,7 +6,7 @@
 /*   By: inwagner <inwagner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/21 16:09:53 by inwagner          #+#    #+#             */
-/*   Updated: 2023/02/22 10:02:25 by inwagner         ###   ########.fr       */
+/*   Updated: 2023/02/22 13:34:15 by inwagner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,6 @@ void	map_creator(t_maparea *m, int fd)
 			super_free(i, m, -1);
 		i++;
 	}
-	printf("Seg 01\n");
 	populate_map(m, fd);
 }
 
@@ -47,7 +46,6 @@ void	populate_map(t_maparea *m, int fd)
 		i++;
 		free(strrow);
 	}
-	printf("Seg 02\n");
 }
 
 void	get_info(char *strrow, t_maparea *m, int i)
@@ -55,33 +53,27 @@ void	get_info(char *strrow, t_maparea *m, int i)
 	int		j;
 
 	j = 0;
-	while (*strrow != '\n' && *strrow != '\0')
+	while (j < m->col)
 	{
 		while (*strrow == ' ')
 			strrow++;
-		printf("Seg 03: %c\n", *strrow);
-		while (*strrow != ' ')
+		if (*strrow != '\n' || *strrow != '\0')
 		{
 			m->coord[i][j].x = i;
 			m->coord[i][j].y = j;
 			m->coord[i][j].z = ft_atoi_base(strrow, 10);
-			while (*strrow != ' ' && *strrow != ',')//
+			while (*strrow != ' ' && *strrow != ',' && *strrow != '\n' && *strrow != '\0')
 				strrow++;
-			printf("Seg 04: %c\n", *strrow);
 			if (*strrow == ',')
 			{
-				strrow += 3;
-				printf("Seg 04.5: %c\n", *strrow);
+				strrow = strrow + 3;
 				m->coord[i][j].color = ft_atoi_base(strrow, 16);
-				while (*strrow != ' ')
+				while (*strrow != ' ' && *strrow != '\n' && *strrow != '\0')
 					strrow++;
-				printf("Seg 05\n");
 			}
 			else
 				m->coord[i][j].color = 0;
-			printf("Seg 06\n");
 		}
 		j++;
-		printf("Seg 07\n");
 	}
 }
