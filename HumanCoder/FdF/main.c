@@ -6,7 +6,7 @@
 /*   By: inwagner <inwagner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/25 11:52:59 by inwagner          #+#    #+#             */
-/*   Updated: 2023/02/21 21:43:36 by inwagner         ###   ########.fr       */
+/*   Updated: 2023/02/22 09:47:09 by inwagner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,13 +40,17 @@ int	main(int argc, char *argv[])
 	fd = open(argv[1], O_RDONLY);
 	if (fd < 0)
 		print_error(0, &mlxdata);
-
+		
+	printf("Seg 00\n");
+	map_creator(&mlxdata, fd);
+	
 	fd = close(fd);
 
 	/* Testes */
 	printf("row %d\n", mlxdata.row);
 	printf("col %d\n", mlxdata.col);
-
+	printmap(&mlxdata);
+	
 	return (0);
 }
 
@@ -64,7 +68,7 @@ void	printmap(t_maparea *ms)
 			while (j < ms->col)
 			{
 				//if (ms->coord[i][j].color)
-					ft_printf("Row: %i Col: %i has Z of: %i and Color of %i\n", ms->coord[i][j].x, ms->coord[i][j].y, ms->coord[i][j].z, ms->coord[i][j].color);
+					printf("Row: %i Col: %i has Z of: %i and Color of %i\n", ms->coord[i][j].x, ms->coord[i][j].y, ms->coord[i][j].z, ms->coord[i][j].color);
 				j++;
 			}
 		}

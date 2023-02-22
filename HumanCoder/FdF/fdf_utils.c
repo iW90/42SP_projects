@@ -6,7 +6,7 @@
 /*   By: inwagner <inwagner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/20 17:41:10 by inwagner          #+#    #+#             */
-/*   Updated: 2023/02/21 21:22:30 by inwagner         ###   ########.fr       */
+/*   Updated: 2023/02/21 21:57:55 by inwagner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,7 @@ int	ft_atoi_base(const char *str, int str_base)
 	int	sign = 1;
 	int	digit;
 
-	while (ft_isspace(str))
+	while (ft_isspace(*str))
 		str++;
 	if (*str == '-')
 	{
