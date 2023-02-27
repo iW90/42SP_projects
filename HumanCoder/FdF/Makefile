@@ -6,18 +6,20 @@
 #    By: inwagner <inwagner@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/25 11:52:50 by inwagner          #+#    #+#              #
-#    Updated: 2023/02/22 09:41:39 by inwagner         ###   ########.fr        #
+#    Updated: 2023/02/26 22:41:50 by inwagner         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 
 NAME	= fdf
-FLAG	= -Wall -Werror -Wextra
+CFLAG	= -Wall -Werror -Wextra
+MFLAG	= -lbsd -lmlx -lXext -lX11
 HDR		= -I ./
-FTS		= fdf_parser.c fdf_dimensioner.c fdf_error.c fdf_utils.c get_next_line.c get_next_line_utils.c main.c
+FTS		= fdf_parser.c fdf_dimensioner.c fdf_error.c fdf_utils.c get_next_line.c get_next_line_utils.c fdf_windower.c main.c
+LBX		= /usr/local/lib/libmlx.a
 
 all:
-	cc ${FLAG} ${HDR} -g ${FTS} -o ${NAME}
+	cc ${CFLAG} ${HDR} ${FTS} ${LBX} ${MFLAG} -g -o ${NAME}
 
 clean:
 	@[ -f ./fdf ] && rm -f ./fdf || echo no fdf file
