@@ -6,16 +6,16 @@
 /*   By: inwagner <inwagner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/21 16:09:53 by inwagner          #+#    #+#             */
-/*   Updated: 2023/02/22 13:34:15 by inwagner         ###   ########.fr       */
+/*   Updated: 2023/03/01 22:18:17 by inwagner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fdf.h"
 
-void	populate_map(t_maparea *m, int fd);
-void	get_info(char *strrow, t_maparea *m, int i);
+void	populate_map(t_mdata *m, int fd);
+void	get_info(char *strrow, t_mdata *m, int i);
 
-void	map_creator(t_maparea *m, int fd)
+void	map_creator(t_mdata *m, int fd)
 {
 	int	i;
 
@@ -33,7 +33,7 @@ void	map_creator(t_maparea *m, int fd)
 	populate_map(m, fd);
 }
 
-void	populate_map(t_maparea *m, int fd)
+void	populate_map(t_mdata *m, int fd)
 {
 	int		i;
 	char	*strrow;
@@ -48,7 +48,7 @@ void	populate_map(t_maparea *m, int fd)
 	}
 }
 
-void	get_info(char *strrow, t_maparea *m, int i)
+void	get_info(char *strrow, t_mdata *m, int i)
 {
 	int		j;
 

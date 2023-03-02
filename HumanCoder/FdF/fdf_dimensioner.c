@@ -6,13 +6,13 @@
 /*   By: inwagner <inwagner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/25 11:53:10 by inwagner          #+#    #+#             */
-/*   Updated: 2023/02/21 17:57:37 by inwagner         ###   ########.fr       */
+/*   Updated: 2023/03/01 22:17:56 by inwagner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fdf.h"
 
-int	define_size(t_maparea *m, int fd)
+int	define_size(t_mdata *m, int fd)
 {
 	char	*gnlrow;
 
@@ -35,7 +35,7 @@ int	define_size(t_maparea *m, int fd)
 	return (0);
 }
 
-int	counter_col(char *strrow, t_maparea *m)
+int	counter_col(char *strrow, t_mdata *m)
 {
 	while (*strrow != '\n' && *strrow != '\0')
 	{

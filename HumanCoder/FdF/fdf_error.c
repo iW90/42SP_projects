@@ -6,7 +6,7 @@
 /*   By: inwagner <inwagner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/21 17:01:05 by inwagner          #+#    #+#             */
-/*   Updated: 2023/02/27 20:57:42 by inwagner         ###   ########.fr       */
+/*   Updated: 2023/03/01 22:18:04 by inwagner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	print_error(int errn)
 	exit(-1);
 }
 
-void	super_free(int rowtofree, t_maparea *m, int errn)
+void	super_free(int rowtofree, t_mdata *m, int errn)
 {
 	int	i;
 

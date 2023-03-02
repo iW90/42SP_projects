@@ -6,20 +6,20 @@
 /*   By: inwagner <inwagner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/25 11:52:59 by inwagner          #+#    #+#             */
-/*   Updated: 2023/02/26 22:55:53 by inwagner         ###   ########.fr       */
+/*   Updated: 2023/03/01 22:18:58 by inwagner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fdf.h"
 
-void	printmap(t_maparea *ms);
+void	printmap(t_mdata *ms);
 
 int	main(int argc, char *argv[])
 {
 	int			fd;
 	int			len;
 	int			ext;
-	t_maparea	mlxdata;
+	t_mdata	mlxdata;
 
 	/* Validação do nome do arquivo */
 	if (argc != 2)
@@ -57,7 +57,7 @@ int	main(int argc, char *argv[])
 }
 
 /* Teste */
-void	printmap(t_maparea *ms)
+void	printmap(t_mdata *ms)
 {
 	int	i;
 	int	j;
