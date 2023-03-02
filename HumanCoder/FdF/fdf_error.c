@@ -6,7 +6,7 @@
 /*   By: inwagner <inwagner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/21 17:01:05 by inwagner          #+#    #+#             */
-/*   Updated: 2023/02/26 22:56:20 by inwagner         ###   ########.fr       */
+/*   Updated: 2023/02/27 20:57:42 by inwagner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,13 +33,4 @@ void	super_free(int rowtofree, t_maparea *m, int errn)
 		i++;
 	}
 	print_error(errn);
-}
-
-int	exit_fdf(t_maparea *m)
-{
-	mlx_destroy_window(m->mlxm, m->wind);
-	mlx_destroy_display(m->mlxm);
-	free(m->mlxm);
-	exit(0);
-	return (0);
 }
