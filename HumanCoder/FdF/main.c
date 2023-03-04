@@ -6,20 +6,22 @@
 /*   By: inwagner <inwagner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/25 11:52:59 by inwagner          #+#    #+#             */
-/*   Updated: 2023/03/01 22:18:58 by inwagner         ###   ########.fr       */
+/*   Updated: 2023/03/04 15:50:27 by inwagner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fdf.h"
 
-void	printmap(t_mdata *ms);
+//void	printmap(t_mdata *ms);
 
 int	main(int argc, char *argv[])
 {
 	int			fd;
 	int			len;
 	int			ext;
-	t_mdata	mlxdata;
+	t_mdata		mlxdata;
+	t_image		img;
+
 
 	/* Validação do nome do arquivo */
 	if (argc != 2)
@@ -46,17 +48,22 @@ int	main(int argc, char *argv[])
 	fd = close(fd);
 
 	/* LBX */
+	mlxdata.image = &img;
 	mlxconfig(&mlxdata);
 
+	/* Drawing */
+	
+
 	/* Testes */
-	printf("row %d\n", mlxdata.row);
-	printf("col %d\n", mlxdata.col);
+	//printf("row %d\n", mlxdata.row);
+	//printf("col %d\n", mlxdata.col);
 	//printmap(&mlxdata);
 	
 	return (0);
 }
 
-/* Teste */
+/*
+//Teste
 void	printmap(t_mdata *ms)
 {
 	int	i;
@@ -77,3 +84,4 @@ void	printmap(t_mdata *ms)
 		i++;
 	}
 }
+*/

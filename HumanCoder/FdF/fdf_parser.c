@@ -6,7 +6,7 @@
 /*   By: inwagner <inwagner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/21 16:09:53 by inwagner          #+#    #+#             */
-/*   Updated: 2023/03/01 22:18:17 by inwagner         ###   ########.fr       */
+/*   Updated: 2023/03/04 15:02:11 by inwagner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,9 +59,9 @@ void	get_info(char *strrow, t_mdata *m, int i)
 			strrow++;
 		if (*strrow != '\n' || *strrow != '\0')
 		{
-			m->coord[i][j].x = i;
-			m->coord[i][j].y = j;
-			m->coord[i][j].z = ft_atoi_base(strrow, 10);
+			m->coord[i][j].coord[0] = i;
+			m->coord[i][j].coord[1] = j;
+			m->coord[i][j].coord[2] = ft_atoi_base(strrow, 10);
 			while (*strrow != ' ' && *strrow != ',' && *strrow != '\n' && *strrow != '\0')
 				strrow++;
 			if (*strrow == ',')
