@@ -6,7 +6,7 @@
 /*   By: inwagner <inwagner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/25 11:52:59 by inwagner          #+#    #+#             */
-/*   Updated: 2023/03/04 15:50:27 by inwagner         ###   ########.fr       */
+/*   Updated: 2023/03/06 21:27:28 by inwagner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,14 +70,14 @@ void	printmap(t_mdata *ms)
 	int	j;
 	
 	i = 0;
-	while (i < ms->row)
+	while (i < ms->col)
 	{
 		j = 0;
 		{
-			while (j < ms->col)
+			while (j < ms->row)
 			{
 				//if (ms->coord[i][j].color)
-					printf("Row: %i | Col: %i | Z: %i | Color: %i\n", ms->coord[i][j].x, ms->coord[i][j].y, ms->coord[i][j].z, ms->coord[i][j].color);
+					printf("Col: %.0f | Row: %.0f | Z: %.0f | Color: %i\n", ms->coord[i][j].coord[0], ms->coord[i][j].coord[1], ms->coord[i][j].coord[2], ms->coord[i][j].color);
 				j++;
 			}
 		}

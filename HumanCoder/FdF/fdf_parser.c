@@ -6,7 +6,7 @@
 /*   By: inwagner <inwagner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/21 16:09:53 by inwagner          #+#    #+#             */
-/*   Updated: 2023/03/04 15:02:11 by inwagner         ###   ########.fr       */
+/*   Updated: 2023/03/06 21:27:07 by inwagner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,13 @@ void	map_creator(t_mdata *m, int fd)
 {
 	int	i;
 
-	m->coord = malloc((sizeof(t_coordinates *) * m->row));
+	m->coord = malloc((sizeof(t_coordinates *) * m->col));
 	if (!m->coord)
 		super_free(0, m, -1);
 	i = 0;
-	while (i < m->row)
+	while (i < m->col)
 	{
-		m->coord[i] = malloc((sizeof(t_coordinates) * m->col));
+		m->coord[i] = malloc((sizeof(t_coordinates) * m->row));
 		if (!m->coord[i])
 			super_free(i, m, -1);
 		i++;
@@ -35,25 +35,25 @@ void	map_creator(t_mdata *m, int fd)
 
 void	populate_map(t_mdata *m, int fd)
 {
-	int		i;
+	int		j;
 	char	*strrow;
 
-	i = 0;
-	while (i < m->row)
+	j = 0;
+	while (j < m->row)
 	{
 		strrow = get_next_line(fd);
-		get_info(strrow, m, i);//
-		i++;
+		get_info(strrow, m, j);
+		j++;
 		free(strrow);
 	}
 }
 
-void	get_info(char *strrow, t_mdata *m, int i)
+void	get_info(char *strrow, t_mdata *m, int j)
 {
-	int		j;
+	int		i;
 
-	j = 0;
-	while (j < m->col)
+	i = 0;
+	while (i < m->col)
 	{
 		while (*strrow == ' ')
 			strrow++;
@@ -74,6 +74,6 @@ void	get_info(char *strrow, t_mdata *m, int i)
 			else
 				m->coord[i][j].color = 0;
 		}
-		j++;
+		i++;
 	}
 }
