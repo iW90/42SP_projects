@@ -6,7 +6,7 @@
 /*   By: inwagner <inwagner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/25 11:52:59 by inwagner          #+#    #+#             */
-/*   Updated: 2023/03/06 21:27:28 by inwagner         ###   ########.fr       */
+/*   Updated: 2023/03/07 21:59:54 by inwagner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,10 @@ int	main(int argc, char *argv[])
 	t_mdata		mlxdata;
 	t_image		img;
 
-
+	/* Preenche as structs com zeros e nulls */
+	mlxdata = (t_mdata) {0};
+	img = (t_image) {0};
+	
 	/* Validação do nome do arquivo */
 	if (argc != 2)
 		print_error(22);
@@ -44,6 +47,13 @@ int	main(int argc, char *argv[])
 		print_error(0);
 		
 	map_creator(&mlxdata, fd);
+
+	/* Matrix */
+	fill_matrix(mlxdata.matrix, 5);
+	mod_coord(&mlxdata, mlxdata.matrix);
+	double	mtest[4][4];
+	concat_matrix(mtest);
+	mod_coord(&mlxdata, mtest);
 	
 	fd = close(fd);
 

@@ -6,7 +6,7 @@
 /*   By: inwagner <inwagner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/25 11:53:04 by inwagner          #+#    #+#             */
-/*   Updated: 2023/03/04 16:10:14 by inwagner         ###   ########.fr       */
+/*   Updated: 2023/03/07 21:51:32 by inwagner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <fcntl.h>
 # include <stdio.h>
 # include <string.h>
+# include <math.h>
 # include "/usr/local/include/mlx.h"
 # include "get_next_line.h"
 
@@ -45,6 +46,7 @@ typedef struct s_mdata
 	int				col;
 	void			*wind;
 	void			*mlxm;
+	double			matrix[4][4];
 	t_image			*image;
 
 	t_coordinates	**coord;
@@ -75,5 +77,12 @@ int		keyboard_commands(int nkey, t_mdata *m);
 void	plotLine(t_mdata *m, t_coordinates *stt, t_coordinates *end);
 void	putpixel(t_mdata *m, int x, int y, int color);
 void	print_brasenham(t_mdata *m);
+
+void	mod_coord(t_mdata *m, double mtest[4][4]);
+void	dot_product(t_coordinates *c, double m[4][4]);
+void	angle_matrix(double mat[4][4], double rad, char axis);
+void	multiply_matrix(double matx[4][4], double maty[4][4], double res[4][4]);
+void	fill_matrix(double matrix[4][4], double diag);
+void	concat_matrix(double res[4][4]);
 
 #endif
