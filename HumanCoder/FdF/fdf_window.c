@@ -6,7 +6,7 @@
 /*   By: inwagner <inwagner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/26 22:20:23 by inwagner          #+#    #+#             */
-/*   Updated: 2023/03/07 22:00:42 by inwagner         ###   ########.fr       */
+/*   Updated: 2023/03/08 21:28:39 by inwagner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,10 @@ void	mlxconfig(t_mdata *m)
 	// endereço e atributos da janelinha
 	m->image->addr = mlx_get_data_addr(m->image->img, \
 	&m->image->bpp, &m->image->llen, &m->image->endian);
+	printf("Bpp: %i\nLlen: %i\n", m->image->bpp, m->image->llen);
 
 	//paint(m);
-	print_brasenham(m);
+	print_bresenham(m);
 	
 	mlx_put_image_to_window(m->mlxm, m->wind, m->image->img, 10, 10); //coloca a imagem
 	mlx_loop(m->mlxm); //mantém a tela ligada

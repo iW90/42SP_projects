@@ -6,7 +6,7 @@
 /*   By: inwagner <inwagner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/04 14:23:44 by inwagner          #+#    #+#             */
-/*   Updated: 2023/03/07 22:03:41 by inwagner         ###   ########.fr       */
+/*   Updated: 2023/03/08 22:14:03 by inwagner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,17 @@
 void	putpixel(t_mdata *m, int x, int y, int color)
 {
 	char	*brush;
+	/*
+	int		target;
+
+	target = (y * m->image->llen) + (x * (m->image->bpp / 8));
+	if (target < 0 || target > (WIN_HEIGHT * m->image->llen))
+		return ;
+	brush = m->image->addr + target;
+	*/
 	
-	//if (y > WIN_WIDTH || x > WIN_HEIGHT || x < 0 || y < 0)
-	//	return ;
+	if (y > WIN_HEIGHT - 15 || y < 0 || x > m->image->llen || x < 0)
+		return ;
 	if (!color)
 		color = 0xFFFFFF;
 	brush = m->image->addr + (y * m->image->llen + x * (m->image->bpp / 8));
@@ -25,7 +33,7 @@ void	putpixel(t_mdata *m, int x, int y, int color)
 	*(unsigned int *)brush = color;
 }
 
-void	print_brasenham(t_mdata *m)
+void	print_bresenham(t_mdata *m)
 {
 	int i;
 	int	j;

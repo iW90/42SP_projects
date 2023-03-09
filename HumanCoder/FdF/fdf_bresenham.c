@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   fdf_brasenham.c                                    :+:      :+:    :+:   */
+/*   fdf_bresenham.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: inwagner <inwagner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/01 20:52:27 by inwagner          #+#    #+#             */
-/*   Updated: 2023/03/04 16:56:05 by inwagner         ###   ########.fr       */
+/*   Updated: 2023/03/08 21:14:00 by inwagner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ static void	plotLineHigh(t_mdata *m, t_delta *d, int color)
 	int	x;
 	int	y;
 
-	d->dm = 2 * d->dy - d->dx;
+	d->dm = 2 * d->dx - d->dy;
 	xi = 1;
 	if (d->dx < 0)
 	{
@@ -55,7 +55,7 @@ static void	plotLineLow(t_mdata *m, t_delta *d, int color)
 	int	x;
 	int	y;
 
-	d->dm = 2 * d->dx - d->dy;
+	d->dm = 2 * d->dy - d->dx;
 	yi = 1;
 	if (d->dy < 0)
 	{

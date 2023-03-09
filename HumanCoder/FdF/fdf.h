@@ -6,7 +6,7 @@
 /*   By: inwagner <inwagner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/25 11:53:04 by inwagner          #+#    #+#             */
-/*   Updated: 2023/03/07 21:51:32 by inwagner         ###   ########.fr       */
+/*   Updated: 2023/03/08 22:13:36 by inwagner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@
 # include "get_next_line.h"
 
 #  define ESC_KEY 65307
-#  define WIN_WIDTH 1920
-#  define WIN_HEIGHT 1080
+#  define WIN_WIDTH 1920 /2
+#  define WIN_HEIGHT 1080 /2
 
 typedef struct s_image
 {
@@ -76,7 +76,7 @@ int		exit_fdf(t_mdata *m);
 int		keyboard_commands(int nkey, t_mdata *m);
 void	plotLine(t_mdata *m, t_coordinates *stt, t_coordinates *end);
 void	putpixel(t_mdata *m, int x, int y, int color);
-void	print_brasenham(t_mdata *m);
+void	print_bresenham(t_mdata *m);
 
 void	mod_coord(t_mdata *m, double mtest[4][4]);
 void	dot_product(t_coordinates *c, double m[4][4]);
