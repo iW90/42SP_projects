@@ -6,7 +6,7 @@
 #    By: inwagner <inwagner@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/25 11:52:50 by inwagner          #+#    #+#              #
-#    Updated: 2023/03/08 21:12:58 by inwagner         ###   ########.fr        #
+#    Updated: 2023/03/10 10:43:05 by inwagner         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ NAME	= fdf
 CFLAG	= -Wall -Werror -Wextra
 MFLAG	= -lbsd -lmlx -lXext -lX11 -lm
 HDR		= -I ./
-FTS		= fdf_parser.c fdf_dimensioner.c fdf_error.c fdf_utils.c get_next_line.c get_next_line_utils.c fdf_window.c fdf_bresenham.c fdf_draw.c fdf_matrix.c main.c
+FTS		= fdf_parser.c fdf_dimensioner.c fdf_error.c fdf_utils.c get_next_line.c get_next_line_utils.c fdf_window.c fdf_bresenham.c fdf_draw.c fdf_matrix.c fdf_matrix_utils.c main.c
 LBX		= /usr/local/lib/libmlx.a
 
 all:

@@ -6,7 +6,7 @@
 /*   By: inwagner <inwagner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/25 11:53:04 by inwagner          #+#    #+#             */
-/*   Updated: 2023/03/09 21:45:38 by inwagner         ###   ########.fr       */
+/*   Updated: 2023/03/10 10:38:20 by inwagner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,9 +81,11 @@ void	print_bresenham(t_mdata *m);
 void	mod_coord(t_mdata *m, double mtest[4][4]);
 void	dot_product(t_coordinates *c, double m[4][4]);
 void	angle_matrix(double mat[4][4], double rad, char axis);
-void	multiply_matrix(double matx[4][4], double maty[4][4], double res[4][4]);
-void	fill_matrix(double matrix[4][4], double diag);
 void	concat_matrix(double res[4][4]);
 void	translation_matrix(double res[4][4], int row, int col);
+
+void	fill_idMatrix(double matrix[4][4], double n);
+void	copy_matrix(double srcm[4][4], double dstm[4][4]);
+void	multiply_matrix(double matA[4][4], double matB[4][4], double mProduct[4][4]);
 
 #endif

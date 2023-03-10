@@ -6,69 +6,13 @@
 /*   By: inwagner <inwagner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/06 21:37:24 by inwagner          #+#    #+#             */
-/*   Updated: 2023/03/09 21:53:23 by inwagner         ###   ########.fr       */
+/*   Updated: 2023/03/10 10:41:40 by inwagner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 # include "fdf.h"
 
-void	fill_matrix(double matrix[4][4], double diag)
-{
-	int		i;
-	int		j;
-
-	i = 0;
-	while (i < 4)
-	{
-		j = 0;
-		while (j < 4)
-		{
-			if (i == j)
-				matrix[i][j] = diag;
-			else
-				matrix[i][j] = 0;
-			j++;
-		}
-		i++;
-	}
-}
-
-void	multiply_matrix(double matx[4][4], double maty[4][4], double res[4][4])
-{
-	int		i;
-	int		j;
-
-	i = 0;
-	while (i < 4)
-	{
-		j = 0;
-		while (j < 4)
-		{
-			res[i][j] = matx[i][0] * maty[0][j] + matx[i][1] * maty[1][j] + \
-			matx[i][2] * maty[2][j] + matx[i][3] * maty[3][j];
-			j++;
-		}
-		i++;
-	}
-}
-
-void	copy_matrix(double matrix[4][4], double copy[4][4])
-{
-	int		i;
-	int		j;
-
-	i = 0;
-	while (i < 4)
-	{
-		j = 0;
-		while (j < 4)
-		{
-			copy[i][j] = matrix[i][j];
-			j++;
-		}
-		i++;
-	}
-}
+// ROTACIONA O MAPA
 
 void	angle_matrix(double mat[4][4], double rad, char axis)
 {
@@ -137,24 +81,26 @@ void	mod_coord(t_mdata *m, double mtest[4][4])
 void	concat_matrix(double res[4][4])
 {
 	double	mz[4][4];
-	//double	mx[4][4];
 	double	rescopy[4][4];
 
 	copy_matrix(res, rescopy);
-	fill_matrix(mz, 1);
+	fill_idMatrix(mz, 1);
 	angle_matrix(mz, M_PI * 0.25, 'z'); //45
 	multiply_matrix(rescopy, mz, res);
-	copy_matrix(res, rescopy);
-	fill_matrix(mz, 1);
-	angle_matrix(mz, M_PI * 0.304, 'x'); //54,736 //35,264 (argtg(30))
-	multiply_matrix(rescopy, mz, res);
-	copy_matrix(res, rescopy);
-	fill_matrix(mz, 25);
-	mz[3][3] = 1;
-	multiply_matrix(rescopy, mz, res);
-	//multiply_matrix(mz, mx, res);
+
 	
+	copy_matrix(res, rescopy);
+	fill_idMatrix(mz, 1);
+	angle_matrix(mz, M_PI * 0.304, 'x'); //54,736 //35,264 (arctg(30))
+	multiply_matrix(rescopy, mz, res);
+
+	
+	copy_matrix(res, rescopy);
+	fill_idMatrix(mz, 25);
+	mz[3][3] = 1;
+	multiply_matrix(rescopy, mz, res);	
 }
+
 void	translation_matrix(double res[4][4], int row, int col)
 {
 	res[3][0] = row; //x

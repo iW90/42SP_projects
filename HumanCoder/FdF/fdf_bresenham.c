@@ -6,13 +6,13 @@
 /*   By: inwagner <inwagner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/01 20:52:27 by inwagner          #+#    #+#             */
-/*   Updated: 2023/03/10 09:16:09 by inwagner         ###   ########.fr       */
+/*   Updated: 2023/03/10 10:41:01 by inwagner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fdf.h"
 
-static void	plotDelta(t_delta *d)
+static void	delta_swap(t_delta *d)
 {
 	int	tempy;
 	int	tempx;
@@ -102,7 +102,7 @@ void	plotLine(t_mdata *m, t_coordinates *stt, t_coordinates *end)
 	{
 		if (d.x0 > d.x1)
 		{
-			plotDelta(&d);
+			delta_swap(&d);
 			plotLineLow(m, &d, stt->color);
 		}
 		else
@@ -112,7 +112,7 @@ void	plotLine(t_mdata *m, t_coordinates *stt, t_coordinates *end)
 	{
 		if (d.y0 > d.y1)
 		{
-			plotDelta(&d);
+			delta_swap(&d);
 			plotLineHigh(m, &d, stt->color);
 		}
 		else
