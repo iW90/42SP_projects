@@ -6,7 +6,7 @@
 /*   By: inwagner <inwagner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/06 21:37:24 by inwagner          #+#    #+#             */
-/*   Updated: 2023/03/09 21:48:36 by inwagner         ###   ########.fr       */
+/*   Updated: 2023/03/09 21:53:23 by inwagner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -160,7 +160,7 @@ void	translation_matrix(double res[4][4], int row, int col)
 	res[3][0] = row; //x
 	res[3][1] = -col; //y
 	res[3][2] = -row; //z
-	res[2][2] = 0.05;//ajuste da escala de Z
+	res[2][2] = 0.05; //ajuste da escala de Z
 }
 
 

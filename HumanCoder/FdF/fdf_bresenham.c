@@ -6,7 +6,7 @@
 /*   By: inwagner <inwagner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/01 20:52:27 by inwagner          #+#    #+#             */
-/*   Updated: 2023/03/08 21:14:00 by inwagner         ###   ########.fr       */
+/*   Updated: 2023/03/10 09:16:09 by inwagner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,20 @@
 
 static void	plotDelta(t_delta *d)
 {
+	int	tempy;
+	int	tempx;
+
+	tempx = d->x0;
+	tempy = d->y0;
+	
 	d->x0 = d->x1;
 	d->y0 = d->y1;
-	d->x1 = d->x0;
-	d->y1 = d->y0;
+	
+	d->x1 = tempx;
+	d->y1 = tempy;
+
+	d->dx = d->x1 - d->x0;
+	d->dy = d->y1 - d->y0;
 }
 
 static void	plotLineHigh(t_mdata *m, t_delta *d, int color)
@@ -31,7 +41,7 @@ static void	plotLineHigh(t_mdata *m, t_delta *d, int color)
 	if (d->dx < 0)
 	{
 		xi = -1;
-		d->dx = -1;
+		d->dx = -d->dx;
 	}
 	x = d->x0;
 	y = d->y0;
@@ -60,7 +70,7 @@ static void	plotLineLow(t_mdata *m, t_delta *d, int color)
 	if (d->dy < 0)
 	{
 		yi = -1;
-		d->dy = -1;
+		d->dy = -d->dy;
 	}
 	x = d->x0;
 	y = d->y0;
