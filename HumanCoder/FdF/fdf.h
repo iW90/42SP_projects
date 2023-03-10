@@ -6,7 +6,7 @@
 /*   By: inwagner <inwagner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/25 11:53:04 by inwagner          #+#    #+#             */
-/*   Updated: 2023/03/08 22:13:36 by inwagner         ###   ########.fr       */
+/*   Updated: 2023/03/09 21:45:38 by inwagner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,5 +84,6 @@ void	angle_matrix(double mat[4][4], double rad, char axis);
 void	multiply_matrix(double matx[4][4], double maty[4][4], double res[4][4]);
 void	fill_matrix(double matrix[4][4], double diag);
 void	concat_matrix(double res[4][4]);
+void	translation_matrix(double res[4][4], int row, int col);
 
 #endif

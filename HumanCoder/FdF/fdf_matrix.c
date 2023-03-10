@@ -6,7 +6,7 @@
 /*   By: inwagner <inwagner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/06 21:37:24 by inwagner          #+#    #+#             */
-/*   Updated: 2023/03/07 21:59:07 by inwagner         ###   ########.fr       */
+/*   Updated: 2023/03/09 21:48:36 by inwagner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,24 @@ void	multiply_matrix(double matx[4][4], double maty[4][4], double res[4][4])
 		{
 			res[i][j] = matx[i][0] * maty[0][j] + matx[i][1] * maty[1][j] + \
 			matx[i][2] * maty[2][j] + matx[i][3] * maty[3][j];
+			j++;
+		}
+		i++;
+	}
+}
+
+void	copy_matrix(double matrix[4][4], double copy[4][4])
+{
+	int		i;
+	int		j;
+
+	i = 0;
+	while (i < 4)
+	{
+		j = 0;
+		while (j < 4)
+		{
+			copy[i][j] = matrix[i][j];
 			j++;
 		}
 		i++;
@@ -118,13 +136,49 @@ void	mod_coord(t_mdata *m, double mtest[4][4])
 
 void	concat_matrix(double res[4][4])
 {
-	double	mx[4][4];
-	double	my[4][4];
+	double	mz[4][4];
+	//double	mx[4][4];
+	double	rescopy[4][4];
 
-	fill_matrix(mx, 1);
-	fill_matrix(my, 1);
-	angle_matrix(mx, 0.785398, 'z'); //45
-	angle_matrix(my, 0.615473, 'x'); //35,264
-	multiply_matrix(mx, my, res);
+	copy_matrix(res, rescopy);
+	fill_matrix(mz, 1);
+	angle_matrix(mz, M_PI * 0.25, 'z'); //45
+	multiply_matrix(rescopy, mz, res);
+	copy_matrix(res, rescopy);
+	fill_matrix(mz, 1);
+	angle_matrix(mz, M_PI * 0.304, 'x'); //54,736 //35,264 (argtg(30))
+	multiply_matrix(rescopy, mz, res);
+	copy_matrix(res, rescopy);
+	fill_matrix(mz, 25);
+	mz[3][3] = 1;
+	multiply_matrix(rescopy, mz, res);
+	//multiply_matrix(mz, mx, res);
 	
 }
+void	translation_matrix(double res[4][4], int row, int col)
+{
+	res[3][0] = row; //x
+	res[3][1] = -col; //y
+	res[3][2] = -row; //z
+	res[2][2] = 0.05;//ajuste da escala de Z
+}
+
+
+/*
+void	translation_matrix(double res[4][4])
+{
+	double	mtrans[4][4];
+	double	mescale[4][4];
+	
+	fill_matrix(mtrans, 1);
+	mtrans[3][0] = 20; //x
+	mtrans[3][1] = -10; //y
+	mtrans[3][2] = 3; //z
+
+	fill_matrix(mescale, 1);
+	mescale[3][3] = 1;
+	
+	multiply_matrix(mtrans, mescale, res);
+}
+*/
+
