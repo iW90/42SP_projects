@@ -10,3 +10,6 @@
 [submodule "HumanCoder/get_next_line"]
 	path = HumanCoder/get_next_line
 	url = git@github.com:iW90/42SP-Get_Next_Line.git
+[submodule "HumanCoder/libft"]
+	path = HumanCoder/libft
+	url = git@github.com:iW90/42SP-libft.git
