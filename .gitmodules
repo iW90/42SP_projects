@@ -1,3 +1,6 @@
 [submodule "HumanCoder/FdF"]
 	path = HumanCoder/FdF
 	url = git@github.com:iW90/42SP_FdF.git
+[submodule "HumanCoder/Born2beroot"]
+	path = HumanCoder/Born2beroot
+	url = git@github.com:iW90/42-SP_Born2beroot.git
