@@ -17,6 +17,7 @@
 ![Get Next Line](https://game.42sp.org.br/static/assets/achievements/get_next_linem.png)
 ![FT_Printf](https://game.42sp.org.br/static/assets/achievements/ft_printfm.png)
 ![Born2beroot](https://game.42sp.org.br/static/assets/achievements/born2berootm.png)
+![FdF]https://game.42sp.org.br/static/assets/achievements/fdfm.png)
 
 </span>
 
@@ -28,8 +29,8 @@
 - [x] get_next_line
 - [x] ft_printf
 - [x] Born2beroot
-- [ ] so_long || FdF || fract-ol: **FdF** *(desenvolvimento)*
-- [ ] minitalk || pipex
+- [x] **FdF** || ~so_long~ || ~fract-ol~
+- [ ] **minitalk** || ~pipex~ *(desenvolvimento)*
 
 ### Fase 2: Ampliando Horizontes
 
@@ -49,7 +50,7 @@
 
 ## Avaliações
 
-- [ ] Exam Rank 01
+- [x] Exam Rank 01
 - [ ] Exam Rank 02
 - [ ] Exam Rank 03
 - [ ] Exam Rank 04
