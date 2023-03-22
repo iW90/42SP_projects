@@ -7,3 +7,6 @@
 [submodule "HumanCoder/ft_printf"]
 	path = HumanCoder/ft_printf
 	url = git@github.com:iW90/42SP-ft_printf.git
+[submodule "HumanCoder/get_next_line"]
+	path = HumanCoder/get_next_line
+	url = git@github.com:iW90/42SP-Get_Next_Line.git
