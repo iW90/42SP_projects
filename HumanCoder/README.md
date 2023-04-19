@@ -1,8 +1,8 @@
-<span align="center">
+<div align="center">
 
 # HUMAN CODER
 
-</span>
+</div>
 
 É o início da jornada como cadete (estudante da 42).
 
