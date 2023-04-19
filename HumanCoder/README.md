@@ -11,7 +11,7 @@
 
 ## Conquistas:
 
-<span align="center">
+<div align="center">
 
 ![Libft](https://game.42sp.org.br/static/assets/achievements/libftm.png)
 ![Get Next Line](https://game.42sp.org.br/static/assets/achievements/get_next_linem.png)
@@ -19,7 +19,7 @@
 ![Born2beroot](https://game.42sp.org.br/static/assets/achievements/born2berootm.png)
 ![FdF](https://game.42sp.org.br/static/assets/achievements/fdfm.png)
 
-</span>
+</div>
 
 ## Projetos
 
