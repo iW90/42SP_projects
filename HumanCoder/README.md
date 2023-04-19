@@ -51,7 +51,7 @@
 ## Avaliações
 
 - [x] Exam Rank 01
-- [ ] Exam Rank 02
+- [x] Exam Rank 02
 - [ ] Exam Rank 03
 - [ ] Exam Rank 04
 - [ ] Exam Rank 05
