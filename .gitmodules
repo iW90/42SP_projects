@@ -4,15 +4,6 @@
 [submodule "HumanCoder/ft_printf"]
 	path = HumanCoder/ft_printf
 	url = git@github.com:iW90/42SP-ft_printf.git
-[submodule "HumanCoder/get_next_line"]
-	path = HumanCoder/get_next_line
-	url = git@github.com:iW90/42SP-Get_Next_Line.git
-[submodule "HumanCoder/libft"]
-	path = HumanCoder/libft
-	url = git@github.com:iW90/42SP-libft.git
-[submodule "HumanCoder/minitalk"]
-	path = HumanCoder/minitalk
-	url = git@github.com:iW90/minitalk.git
 [submodule "HumanCoder/Born2beroot"]
 	path = HumanCoder/Born2beroot
 	url = git@github.com:iW90/Born2beroot.git
