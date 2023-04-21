@@ -12,5 +12,12 @@ A **42** é uma escola francesa de programação que utiliza o *"peer-to-peer"* 
 
 - [x] Piscina
 - [x] WarmUp
-- [ ] HumanCoder
-- [ ] Especializações
+
+### HumanCoder
+
+- [ ] FASE 1: Entrando em Órbita
+- [ ] FASE 2: Ampliando Horizontes
+- [ ] FASE 3: Explorando o Espaço
+
+
+### Especializações
