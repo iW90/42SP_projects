@@ -10,6 +10,8 @@ A **42** é uma escola francesa de programação que utiliza o *"peer-to-peer"* 
 
 ## Sequência
 
+### Piscina
+
 - [x] Piscina
 - [x] WarmUp
 
