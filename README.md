@@ -21,3 +21,10 @@ A **42** é uma escola francesa de programação que utiliza o *"peer-to-peer"* 
 
 
 ### Especializações
+
+- [ ] Design Gráfico
+- [ ] Desenvolvimento de Jogos
+- [ ] Desenvolvimento de Software
+- [ ] Segurança Cibernética
+- [ ] Ciência de Dados
+- [ ] Intelig
