@@ -13,3 +13,6 @@
 [submodule "HumanCoder/minitalk"]
 	path = HumanCoder/minitalk
 	url = git@github.com:iW90/minitalk.git
+[submodule "HumanCoder/Born2beroot"]
+	path = HumanCoder/Born2beroot
+	url = git@github.com:iW90/Born2beroot.git
