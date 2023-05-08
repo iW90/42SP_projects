@@ -1,8 +1,10 @@
-<span align="center">
+<div align="center">
 
 # PISCINA 2022
 
-</span>
+![Piscine Badge](./piscine_badge.png)
+
+</div>
 
 Piscina é o nome dado ao processo seletivo da **École 42**, com foco inicial em UNIX e linguagem C.
 
