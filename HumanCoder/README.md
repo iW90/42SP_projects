@@ -18,6 +18,7 @@
 ![FT_Printf](https://game.42sp.org.br/static/assets/achievements/ft_printfm.png)
 ![Born2beroot](https://game.42sp.org.br/static/assets/achievements/born2berootm.png)
 ![FdF](https://game.42sp.org.br/static/assets/achievements/fdfm.png)
+![Minitalk](https://game.42sp.org.br/static/assets/achievements/minitalkm.png)
 
 </div>
 
