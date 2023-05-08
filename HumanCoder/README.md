@@ -31,11 +31,11 @@
 - [x] ft_printf
 - [x] Born2beroot
 - [x] **FdF** || ~so_long~ || ~fract-ol~
-- [ ] **minitalk** || ~pipex~ *(desenvolvimento)*
+- [x] **minitalk** || ~pipex~
 
 ### Fase 2: Ampliando Horizontes
 
-- [ ] push_swap
+- [ ] push_swap *(desenvolvimento)*
 - [ ] minishell
 - [ ] Philosophers
 - [ ] NetPractice
