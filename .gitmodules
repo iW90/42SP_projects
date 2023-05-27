@@ -16,3 +16,6 @@
 [submodule "HumanCoder/minitalk"]
 	path = HumanCoder/minitalk
 	url = git@github.com:iW90/minitalk.git
+[submodule "HumanCoder/push_swap"]
+	path = HumanCoder/push_swap
+	url = https://github.com/iW90/push_swap.git
