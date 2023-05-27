@@ -35,8 +35,8 @@
 
 ### Fase 2: Ampliando Horizontes
 
-- [ ] push_swap *(desenvolvimento)*
-- [ ] minishell
+- [x] push_swap
+- [ ] minishell *(desenvolvimento)*
 - [ ] Philosophers
 - [ ] NetPractice
 - [ ] cub3d || miniRT
