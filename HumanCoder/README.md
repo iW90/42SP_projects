@@ -22,16 +22,16 @@
 
 ### Fase 1: Entrando em Órbita
 
-- [x] [Libft](./fase_1/libft/)
-- [x] [get_next_line](./fase_1/get_next_line/)
-- [x] [ft_printf](./fase_1/ft_printf/)
-- [x] [Born2beroot](./fase_1/Born2beroot/)
-- [x] [**FdF**](./fase_1/FdF/) || ~so_long~ || ~fract-ol~
-- [x] [**minitalk**](./fase_1/minitalk/) || ~pipex~
+- [x] [Libft](./fase1/libft/)
+- [x] [get_next_line](./fase1/get_next_line/)
+- [x] [ft_printf](./fase1/ft_printf/)
+- [x] [Born2beroot](./fase1/Born2beroot/)
+- [x] [**FdF**](./fase1/FdF/) || ~so_long~ || ~fract-ol~
+- [x] [**minitalk**](./fase1/minitalk/) || ~pipex~
 
 ### Fase 2: Ampliando Horizontes
 
-- [x] [push_swap](./fase_2/push_swap/)
+- [x] [push_swap](./fase2/push_swap/)
 - [ ] minishell *(desenvolvimento)*
 - [ ] Philosophers
 - [ ] NetPractice
