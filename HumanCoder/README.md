@@ -22,16 +22,16 @@
 
 ### Fase 1: Entrando em Órbita
 
-- [x] [Libft](./fase1/01_libft/)
-- [x] [get_next_line](./fase1/02_get_next_line/)
-- [x] [ft_printf](./fase1/03_ft_printf/)
-- [x] [Born2beroot](./fase1/04_Born2beroot/)
-- [x] [**FdF**](./fase1/05_FdF/) || ~so_long~ || ~fract-ol~
-- [x] [**minitalk**](./fase1/06_minitalk/) || ~pipex~
+- [x] [Libft](https://github.com/iW90/libft)
+- [x] [get_next_line](https://github.com/iW90/get_next_line)
+- [x] [ft_printf](https://github.com/iW90/ft_printf)
+- [x] [Born2beroot](https://github.com/iW90/Born2beroot)
+- [x] [**FdF**](https://github.com/iW90/FdF) || ~so_long~ || ~fract-ol~
+- [x] [**minitalk**](https://github.com/iW90/minitalk) || ~pipex~
 
 ### Fase 2: Ampliando Horizontes
 
-- [x] [push_swap](./fase2/07_push_swap/)
+- [x] [push_swap](https://github.com/iW90/push_swap)
 - [ ] minishell *(desenvolvimento)*
 - [ ] Philosophers
 - [ ] NetPractice
