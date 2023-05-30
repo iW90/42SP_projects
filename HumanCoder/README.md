@@ -13,12 +13,8 @@
 
 <div align="center">
 
-![Libft](https://game.42sp.org.br/static/assets/achievements/libftm.png)
-![Get Next Line](https://game.42sp.org.br/static/assets/achievements/get_next_linem.png)
-![FT_Printf](https://game.42sp.org.br/static/assets/achievements/ft_printfm.png)
-![Born2beroot](https://game.42sp.org.br/static/assets/achievements/born2berootm.png)
-![FdF](https://game.42sp.org.br/static/assets/achievements/fdfm.png)
-![Minitalk](https://game.42sp.org.br/static/assets/achievements/minitalkm.png)
+![Entrando em Órbita](https://game.42sp.org.br/static/assets/achievements/phase_onee.png)
+![Voluntária](https://game.42sp.org.br/static/assets/achievements/volunteere.png)
 
 </div>
 
@@ -26,16 +22,16 @@
 
 ### Fase 1: Entrando em Órbita
 
-- [x] Libft
-- [x] get_next_line
-- [x] ft_printf
-- [x] Born2beroot
-- [x] **FdF** || ~so_long~ || ~fract-ol~
-- [x] **minitalk** || ~pipex~
+- [x] [Libft](./fase_1/libft/)
+- [x] [get_next_line](./fase_1/get_next_line/)
+- [x] [ft_printf](./fase_1/ft_printf/)
+- [x] [Born2beroot](./fase_1/Born2beroot/)
+- [x] [**FdF**](./fase_1/FdF/) || ~so_long~ || ~fract-ol~
+- [x] [**minitalk**](./fase_1/minitalk/) || ~pipex~
 
 ### Fase 2: Ampliando Horizontes
 
-- [x] push_swap
+- [x] [push_swap](./fase_2/push_swap/)
 - [ ] minishell *(desenvolvimento)*
 - [ ] Philosophers
 - [ ] NetPractice

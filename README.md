@@ -12,8 +12,8 @@ A **42** é uma escola francesa de programação que utiliza o *"peer-to-peer"* 
 
 ### Piscina
 
-- [x] Piscina
-- [x] WarmUp
+- [x] [Piscina](./Piscine/)
+- [x] [WarmUp](./WarmUp/)
 
 ### HumanCoder
 
