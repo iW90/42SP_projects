@@ -35,12 +35,11 @@
 - [ ] minishell *(desenvolvimento)*
 - [ ] Philosophers
 - [ ] NetPractice
-- [ ] cub3d || miniRT
+- [ ] ~cub3d~ || miniRT
 
 ### Fase 3: Explorando o Espaço
 
-- [ ] CPP Module (00 a 08)
-- [ ] ft_containers
+- [ ] CPP Module (00 a 09)
 - [ ] Inception
 - [ ] ft_irc || webserv
 - [ ] ft_transcendence
@@ -49,7 +48,7 @@
 
 - [x] Exam Rank 01
 - [x] Exam Rank 02
-- [ ] Exam Rank 03
+- [x] Exam Rank 03
 - [ ] Exam Rank 04
 - [ ] Exam Rank 05
 - [ ] Exam Rank 06
