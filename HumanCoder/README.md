@@ -35,7 +35,7 @@
 ### Fase 2: Ampliando Horizontes
 
 - [x] [push_swap](https://github.com/iW90/push_swap)
-- [x] [minishel](https://github.com/iW90/minishell)
+- [x] [minishell](https://github.com/iW90/minishell)
 - [x] [Philosophers](https://github.com/iW90/philosophers)
 - [x] [NetPractice](https://github.com/iW90/net_practice)
 - [x] [**miniRT**](https://github.com/iW90/miniRT) || ~cub3d~
