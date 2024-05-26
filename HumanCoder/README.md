@@ -14,7 +14,10 @@
 <div align="center">
 
 ![Entrando em Órbita](https://game.42sp.org.br/static/assets/achievements/phase_onee.png)
+![Ampliando Horizontes](https://game.42sp.org.br/static/assets/achievements/phase_twoe.png)
+
 ![Voluntária](https://game.42sp.org.br/static/assets/achievements/volunteere.png)
+![P2P Master](https://game.42sp.org.br/static/assets/achievements/evaluatione.png)
 
 </div>
 
@@ -32,16 +35,16 @@
 ### Fase 2: Ampliando Horizontes
 
 - [x] [push_swap](https://github.com/iW90/push_swap)
-- [ ] minishell *(desenvolvimento)*
-- [ ] Philosophers
-- [ ] NetPractice
-- [ ] ~cub3d~ || miniRT
+- [x] [minishel](https://github.com/iW90/minishell)
+- [x] [Philosophers](https://github.com/iW90/philosophers)
+- [x] [NetPractice](https://github.com/iW90/net_practice)
+- [x] [**miniRT**](https://github.com/iW90/miniRT) || ~cub3d~
 
 ### Fase 3: Explorando o Espaço
 
-- [ ] CPP Module (00 a 09)
+- [ ] [CPP Module (00 a 09)](https://github.com/iW90/CPP) *(desenvolvimento)*
 - [ ] Inception
-- [ ] ft_irc || webserv
+- [ ] webserv || ft_irc
 - [ ] ft_transcendence
 
 ## Avaliações
