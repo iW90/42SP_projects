@@ -52,6 +52,6 @@
 - [x] Exam Rank 01
 - [x] Exam Rank 02
 - [x] Exam Rank 03
-- [ ] Exam Rank 04
+- [x] Exam Rank 04
 - [ ] Exam Rank 05
 - [ ] Exam Rank 06
