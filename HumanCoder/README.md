@@ -42,9 +42,9 @@
 
 ### Fase 3: Explorando o Espaço
 
-- [ ] [CPP Module (00 a 09)](https://github.com/iW90/CPP) *(desenvolvimento)*
-- [ ] Inception
-- [ ] webserv || ft_irc
+- [x] [CPP Module (00 a 09)](https://github.com/iW90/CPP)
+- [ ] [Inception](https://github.com/iW90/Inception) *(desenvolvimento)*
+- [ ] [**webserv**](https://github.com/iW90/webserv) || ~ft_irc~
 - [ ] ft_transcendence
 
 ## Avaliações
