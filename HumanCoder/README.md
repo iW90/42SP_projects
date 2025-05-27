@@ -43,9 +43,9 @@
 ### Fase 3: Explorando o Espaço
 
 - [x] [CPP Module (00 a 09)](https://github.com/iW90/CPP)
-- [ ] [Inception](https://github.com/iW90/Inception) *(desenvolvimento)*
-- [ ] [**webserv**](https://github.com/iW90/webserv) || ~ft_irc~
-- [ ] ft_transcendence
+- [x] [Inception](https://github.com/iW90/Inception)
+- [x] [**ircserv**](https://github.com/iW90/ircserv) || ~webserv~
+- [ ] ft_transcendence *(desenvolvimento)*
 
 ## Avaliações
 
@@ -53,5 +53,5 @@
 - [x] Exam Rank 02
 - [x] Exam Rank 03
 - [x] Exam Rank 04
-- [ ] Exam Rank 05
-- [ ] Exam Rank 06
+- [x] Exam Rank 05
+- [x] Exam Rank 06
