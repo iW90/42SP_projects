@@ -2,24 +2,13 @@
 
 # HUMAN CODER
 
+![Piscine Badge](../assets/common_coren.png)
+
 </div>
 
 É o início da jornada como cadete (estudante da 42).
 
 É utilizada uma plataforma gameficada, onde se perdem vidas quando os prazos de entrega de cada projeto são extrapolados.
-
-
-## Conquistas:
-
-<div align="center">
-
-![Entrando em Órbita](https://game.42sp.org.br/static/assets/achievements/phase_onee.png)
-![Ampliando Horizontes](https://game.42sp.org.br/static/assets/achievements/phase_twoe.png)
-
-![Voluntária](https://game.42sp.org.br/static/assets/achievements/volunteere.png)
-![P2P Master](https://game.42sp.org.br/static/assets/achievements/evaluatione.png)
-
-</div>
 
 ## Projetos
 
