@@ -33,8 +33,8 @@
 
 - [x] [CPP Module (00 a 09)](https://github.com/iW90/CPP)
 - [x] [Inception](https://github.com/iW90/Inception)
-- [x] [**ircserv**](https://github.com/iW90/ircserv) || ~webserv~
-- [ ] ft_transcendence *(desenvolvimento)*
+- [x] [**ft_irc**](https://github.com/iW90/ft_irc) || ~webserv~
+- [ ] [ft_transcendence](https://github.com/iW90/ft_transcendence) *(desenvolvimento)*
 
 ## Avaliações
 
