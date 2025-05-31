@@ -2,7 +2,7 @@
 
 # HUMAN CODER
 
-![Piscine Badge](../assets/common_coren.png)
+![Human Coder Badge](../assets/common_coren.png)
 
 </div>
 
