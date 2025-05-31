@@ -22,3 +22,24 @@
 [submodule "HumanCoder/fase2/08_minishell"]
 	path = HumanCoder/fase2/08_minishell
 	url = https://github.com/iW90/minishell.git
+[submodule "HumanCoder/fase2/09_Philosophers"]
+	path = HumanCoder/fase2/09_Philosophers
+	url = https://github.com/iW90/philosophers.git
+[submodule "HumanCoder/fase2/10_NetPractice"]
+	path = HumanCoder/fase2/10_NetPractice
+	url = https://github.com/iW90/net_practice.git
+[submodule "HumanCoder/fase2/11_miniRT"]
+	path = HumanCoder/fase2/11_miniRT
+	url = https://github.com/iW90/miniRT.git
+[submodule "HumanCoder/fase2/12_CPP"]
+	path = HumanCoder/fase2/12_CPP
+	url = https://github.com/iW90/CPP.git
+[submodule "HumanCoder/fase3/13_Inception"]
+	path = HumanCoder/fase3/13_Inception
+	url = https://github.com/iW90/Inception.git
+[submodule "HumanCoder/fase3/14_ircserv"]
+	path = HumanCoder/fase3/14_ircserv
+	url = https://github.com/iW90/ft_irc.git
+[submodule "HumanCoder/fase3/15_ft_transcendence"]
+	path = HumanCoder/fase3/15_ft_transcendence
+	url = https://github.com/iW90/ft_transcendence.git

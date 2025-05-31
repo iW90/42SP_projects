@@ -2,7 +2,7 @@
 
 # PISCINA 2022
 
-![Piscine Badge](./piscine_badge.png)
+![Piscine Badge](../assets/piscine_badge.png)
 
 </div>
 
